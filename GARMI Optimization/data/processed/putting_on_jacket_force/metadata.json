@@ -1,0 +1,56 @@
+{
+  "task_name": "putting_on_jacket_force",
+  "trial_id": "putting_on_jacket_force",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "therapist puts jacket on patient",
+  "original_trial_name": "jacket3",
+  "split": "optimization",
+  "repeat_group": "putting_on_jacket_force",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/putting_on_jacket_force.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.2583333333333333,
+    "end": 20.275,
+    "duration": 18.016666666666666,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 272,
+    "end_frame": 2434
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -2.19213,
+      0.13049,
+      0.84911
+    ],
+    "max": [
+      -0.20254,
+      1.02548,
+      1.33914
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

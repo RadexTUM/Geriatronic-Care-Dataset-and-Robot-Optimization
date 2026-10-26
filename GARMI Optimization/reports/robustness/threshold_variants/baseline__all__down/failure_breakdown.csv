@@ -1,0 +1,8 @@
+failure,task_count,task_fraction
+ok,28,0.509090909090909
+max_position_error,17,0.3090909090909091
+max_orientation_error,4,0.07272727272727272
+garmi_collision,2,0.03636363636363636
+joint_speed_limit,2,0.03636363636363636
+ik_discontinuity,1,0.01818181818181818
+inter_arm_collision,1,0.01818181818181818

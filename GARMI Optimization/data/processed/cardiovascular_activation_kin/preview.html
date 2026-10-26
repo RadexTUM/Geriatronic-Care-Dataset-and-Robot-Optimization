@@ -1,0 +1,63 @@
+<html><head><meta charset='utf-8'><title>cardiovascular_activation_kin</title></head>
+<body><h2>cardiovascular_activation_kin</h2>
+<p>therapist makes the patient lift their arms alternately while laying in bed</p>
+<p>category: Geriatric Rehabilitation | split: optimization |
+force measurement: False</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.541, 0.317, 0.442]</td><td>0.0</td></tr><tr><td>right</td><td>[0.735, 0.275, 0.57]</td><td>0.0</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;cardiovascular_activation_kin&quot;,
+  &quot;trial_id&quot;: &quot;cardiovascular_activation_kin&quot;,
+  &quot;category&quot;: &quot;geriatric_rehabilitation&quot;,
+  &quot;category_name&quot;: &quot;Geriatric Rehabilitation&quot;,
+  &quot;description&quot;: &quot;therapist makes the patient lift their arms alternately while laying in bed&quot;,
+  &quot;original_trial_name&quot;: &quot;hklaktivierung1&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;cardiovascular_activation_kin&quot;,
+  &quot;force_measurement&quot;: false,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Geriatric Rehabilitation/MoCap/cardiovascular_activation_kin.csv&quot;,
+    &quot;force_torque&quot;: null
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: null,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 3.183333333333333,
+    &quot;end&quot;: 20.958333333333332,
+    &quot;duration&quot;: 17.775,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 383,
+    &quot;end_frame&quot;: 2516
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {},
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -1.18821,
+      0.43662,
+      1.03452
+    ],
+    &quot;max&quot;: [
+      -0.45363,
+      1.21115,
+      1.60461
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;kinematics-only trial: no force-torque recording; forces set to zero&quot;
+  ]
+}</pre></details>
+</body></html>

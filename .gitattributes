@@ -1,0 +1,13 @@
+# Raw dataset files are stored with Git LFS (https://git-lfs.com).
+Geriatronics[[:space:]]Interaction[[:space:]]Dataset/**/*.csv filter=lfs diff=lfs merge=lfs -text
+Geriatronics[[:space:]]Interaction[[:space:]]Dataset/*.xlsx filter=lfs diff=lfs merge=lfs -text
+Geriatronics[[:space:]]Interaction[[:space:]]Dataset/Objects/** filter=lfs diff=lfs merge=lfs -text
+
+# Binary files elsewhere in the repository
+*.npz binary
+*.stl binary
+*.png binary
+*.jpg binary
+
+# Shell scripts keep LF line endings
+*.sh text eol=lf

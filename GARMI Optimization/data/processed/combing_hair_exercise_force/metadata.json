@@ -1,0 +1,68 @@
+{
+  "task_name": "combing_hair_exercise_force",
+  "trial_id": "combing_hair_exercise_force",
+  "category": "geriatric_rehabilitation",
+  "category_name": "Geriatric Rehabilitation",
+  "description": "exercise: passive mobilisation for ADL combing hair three times",
+  "original_trial_name": "haare_passiv_k_1",
+  "split": "optimization",
+  "repeat_group": "combing_hair_exercise_force",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Geriatric Rehabilitation/MoCap/combing_hair_exercise_force.csv",
+    "force_torque": "Geriatric Rehabilitation/FT-sensor/combing_hair_exercise_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 5.419850865366166,
+    "end": 23.471993887432046,
+    "duration": 18.05214302206588,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 645,
+    "end_frame": 2790
+  },
+  "sensor_positions": {
+    "sensor1": "left upperarm",
+    "sensor2": "left wrist"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 28.525289423551513,
+      "mean": 8.334801741678913
+    },
+    "sensor2": {
+      "max": 38.79647366692162,
+      "mean": 13.133080310136389
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      0.09835,
+      -0.56154,
+      0.66002
+    ],
+    "max": [
+      0.58954,
+      0.05189,
+      1.55937
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred right end-effector by wrist proximity (left=0.333 m, right=0.130 m)"
+  ]
+}

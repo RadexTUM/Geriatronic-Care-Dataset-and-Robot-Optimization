@@ -1,0 +1,56 @@
+{
+  "task_name": "turning_to_side_AAN_kin",
+  "trial_id": "turning_to_side_AAN_kin",
+  "category": "transfer",
+  "category_name": "Transfer",
+  "description": "therapist helps patient turn on their side",
+  "original_trial_name": "seitlich_active1",
+  "split": "optimization",
+  "repeat_group": "turning_to_side_AAN_kin",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Transfer/MoCap/turning_to_side_AAN_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.158333333333333,
+    "end": 11.858333333333333,
+    "duration": 9.7,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 260,
+    "end_frame": 1424
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -1.14445,
+      0.21417,
+      0.83515
+    ],
+    "max": [
+      -0.45437,
+      0.89428,
+      1.14565
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

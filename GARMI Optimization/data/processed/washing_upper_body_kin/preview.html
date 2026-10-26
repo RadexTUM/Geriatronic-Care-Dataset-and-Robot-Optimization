@@ -1,0 +1,63 @@
+<html><head><meta charset='utf-8'><title>washing_upper_body_kin</title></head>
+<body><h2>washing_upper_body_kin</h2>
+<p>therapist washes patient&#x27;s upper body</p>
+<p>category: Basic Care | split: heldout |
+force measurement: False</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.975, 0.525, 0.346]</td><td>0.0</td></tr><tr><td>right</td><td>[0.675, 0.772, 0.434]</td><td>0.0</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;washing_upper_body_kin&quot;,
+  &quot;trial_id&quot;: &quot;washing_upper_body_kin&quot;,
+  &quot;category&quot;: &quot;basic_care&quot;,
+  &quot;category_name&quot;: &quot;Basic Care&quot;,
+  &quot;description&quot;: &quot;therapist washes patient&#x27;s upper body&quot;,
+  &quot;original_trial_name&quot;: &quot;washup1&quot;,
+  &quot;split&quot;: &quot;heldout&quot;,
+  &quot;repeat_group&quot;: &quot;washing_upper_body&quot;,
+  &quot;force_measurement&quot;: false,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Basic Care/MoCap/washing_upper_body_kin.csv&quot;,
+    &quot;force_torque&quot;: null
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: null,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 7.708333333333333,
+    &quot;end&quot;: 83.60833333333333,
+    &quot;duration&quot;: 75.9,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 926,
+    &quot;end_frame&quot;: 10034
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {},
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -1.37853,
+      0.08446,
+      0.88105
+    ],
+    &quot;max&quot;: [
+      -0.40379,
+      1.04023,
+      1.31456
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;kinematics-only trial: no force-torque recording; forces set to zero&quot;
+  ]
+}</pre></details>
+</body></html>

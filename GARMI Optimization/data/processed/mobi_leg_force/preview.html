@@ -1,0 +1,76 @@
+<html><head><meta charset='utf-8'><title>mobi_leg_force</title></head>
+<body><h2>mobi_leg_force</h2>
+<p>therapist moves patient´s left leg</p>
+<p>category: Geriatric Rehabilitation | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.182, 0.533, 0.47]</td><td>51.4</td></tr><tr><td>right</td><td>[0.106, 0.537, 0.176]</td><td>47.9</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;mobi_leg_force&quot;,
+  &quot;trial_id&quot;: &quot;mobi_leg_force&quot;,
+  &quot;category&quot;: &quot;geriatric_rehabilitation&quot;,
+  &quot;category_name&quot;: &quot;Geriatric Rehabilitation&quot;,
+  &quot;description&quot;: &quot;therapist moves patient\u00b4s left leg&quot;,
+  &quot;original_trial_name&quot;: &quot;bein_k_1&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;mobi_leg_force&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Geriatric Rehabilitation/MoCap/mobi_leg_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Geriatric Rehabilitation/FT-sensor/mobi_leg_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 2.62432234057971,
+    &quot;end&quot;: 25.18340092210145,
+    &quot;duration&quot;: 22.55907858152174,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 313,
+    &quot;end_frame&quot;: 2995
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;patient left thigh&quot;,
+    &quot;sensor2&quot;: &quot;patient left lower leg&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: &quot;left&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 48.896825251033256,
+      &quot;mean&quot;: 19.34515963508218
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 52.58749614360229,
+      &quot;mean&quot;: 27.411526374711947
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -0.89243,
+      -0.13941,
+      1.00512
+    ],
+    &quot;max&quot;: [
+      -0.70631,
+      0.79415,
+      1.47508
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;sensor1: inferred right end-effector by wrist proximity (left=0.377 m, right=0.159 m)&quot;,
+    &quot;sensor2: inferred left end-effector by wrist proximity (left=0.133 m, right=0.401 m)&quot;
+  ]
+}</pre></details>
+</body></html>

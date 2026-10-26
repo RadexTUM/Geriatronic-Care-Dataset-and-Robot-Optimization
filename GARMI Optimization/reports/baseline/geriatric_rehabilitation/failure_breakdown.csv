@@ -1,0 +1,4 @@
+failure,task_count,task_fraction
+ok,10,0.625
+max_position_error,4,0.25
+garmi_collision,2,0.125

@@ -1,0 +1,68 @@
+{
+  "task_name": "tucking_shirt_exercise_force",
+  "trial_id": "tucking_shirt_exercise_force",
+  "category": "geriatric_rehabilitation",
+  "category_name": "Geriatric Rehabilitation",
+  "description": "exercise: passive mobilisation for ADL tuck shirt in trousers three times",
+  "original_trial_name": "hemd_k_1",
+  "split": "optimization",
+  "repeat_group": "tucking_shirt_exercise",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Geriatric Rehabilitation/MoCap/tucking_shirt_exercise_force.csv",
+    "force_torque": "Geriatric Rehabilitation/FT-sensor/tucking_shirt_exercise_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.5202681546356485,
+    "end": 21.93009156619911,
+    "duration": 18.409823411563462,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 419,
+    "end_frame": 2605
+  },
+  "sensor_positions": {
+    "sensor1": "left upperarm",
+    "sensor2": "left wrist"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "left",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 27.38763324356156,
+      "mean": 10.220860689014053
+    },
+    "sensor2": {
+      "max": 38.08912741227401,
+      "mean": 14.403492463368782
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -0.0049,
+      -0.88638,
+      0.62505
+    ],
+    "max": [
+      0.57405,
+      -0.35197,
+      1.27885
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred left end-effector by wrist proximity (left=0.137 m, right=0.353 m)"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "task_name": "standing_up_AAN_kin",
+  "trial_id": "standing_up_AAN_kin",
+  "category": "transfer",
+  "category_name": "Transfer",
+  "description": "exercise: support for standing up three times from the side",
+  "original_trial_name": "aufstehen_o_1",
+  "split": "heldout",
+  "repeat_group": "standing_up_AAN",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Transfer/MoCap/standing_up_AAN_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 4.691666666666666,
+    "end": 31.775,
+    "duration": 27.083333333333332,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 564,
+    "end_frame": 3814
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      0.12545,
+      -0.73329,
+      0.66314
+    ],
+    "max": [
+      0.71324,
+      0.1746,
+      1.49743
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

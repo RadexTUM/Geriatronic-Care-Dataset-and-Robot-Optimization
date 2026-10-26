@@ -1,0 +1,69 @@
+{
+  "task_name": "mobi_leg_force",
+  "trial_id": "mobi_leg_force",
+  "category": "geriatric_rehabilitation",
+  "category_name": "Geriatric Rehabilitation",
+  "description": "therapist moves patient\u00b4s left leg",
+  "original_trial_name": "bein_k_1",
+  "split": "optimization",
+  "repeat_group": "mobi_leg_force",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Geriatric Rehabilitation/MoCap/mobi_leg_force.csv",
+    "force_torque": "Geriatric Rehabilitation/FT-sensor/mobi_leg_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.62432234057971,
+    "end": 25.18340092210145,
+    "duration": 22.55907858152174,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 313,
+    "end_frame": 2995
+  },
+  "sensor_positions": {
+    "sensor1": "patient left thigh",
+    "sensor2": "patient left lower leg"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 48.896825251033256,
+      "mean": 19.34515963508218
+    },
+    "sensor2": {
+      "max": 52.58749614360229,
+      "mean": 27.411526374711947
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -0.89243,
+      -0.13941,
+      1.00512
+    ],
+    "max": [
+      -0.70631,
+      0.79415,
+      1.47508
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred right end-effector by wrist proximity (left=0.377 m, right=0.159 m)",
+    "sensor2: inferred left end-effector by wrist proximity (left=0.133 m, right=0.401 m)"
+  ]
+}

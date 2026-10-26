@@ -1,0 +1,74 @@
+<html><head><meta charset='utf-8'><title>changing_underpad_force</title></head>
+<body><h2>changing_underpad_force</h2>
+<p>therapist moves patient to the side to change underpad</p>
+<p>category: Basic Care | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.696, 0.696, 0.172]</td><td>45.0</td></tr><tr><td>right</td><td>[0.6, 0.923, 0.341]</td><td>23.9</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;changing_underpad_force&quot;,
+  &quot;trial_id&quot;: &quot;changing_underpad_force&quot;,
+  &quot;category&quot;: &quot;basic_care&quot;,
+  &quot;category_name&quot;: &quot;Basic Care&quot;,
+  &quot;description&quot;: &quot;therapist moves patient to the side to change underpad&quot;,
+  &quot;original_trial_name&quot;: &quot;underpad3&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;changing_underpad&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Basic Care/MoCap/changing_underpad_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Basic Care/FT-sensor/changing_underpad_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 6.040176928907475,
+    &quot;end&quot;: 28.512323361212758,
+    &quot;duration&quot;: 22.472146432305284,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 720,
+    &quot;end_frame&quot;: 3395
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;left hand therapist - patient left leg&quot;,
+    &quot;sensor2&quot;: &quot;right hand therapist - left arm patient&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;left&quot;,
+    &quot;sensor2&quot;: &quot;right&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 47.047462762933804,
+      &quot;mean&quot;: 6.45654470989048
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 25.727079106075468,
+      &quot;mean&quot;: 4.566320175340612
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -1.23743,
+      -0.34319,
+      0.90367
+    ],
+    &quot;max&quot;: [
+      -0.54106,
+      0.99493,
+      1.2448
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;
+  ]
+}</pre></details>
+</body></html>

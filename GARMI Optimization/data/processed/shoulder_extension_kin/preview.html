@@ -1,0 +1,63 @@
+<html><head><meta charset='utf-8'><title>shoulder_extension_kin</title></head>
+<body><h2>shoulder_extension_kin</h2>
+<p>passive ROM assessment shoulder extension/flexion three times</p>
+<p>category: ROM | split: heldout |
+force measurement: False</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.344, 0.519, 0.927]</td><td>0.0</td></tr><tr><td>right</td><td>[0.328, 0.466, 0.565]</td><td>0.0</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;shoulder_extension_kin&quot;,
+  &quot;trial_id&quot;: &quot;shoulder_extension_kin&quot;,
+  &quot;category&quot;: &quot;rom&quot;,
+  &quot;category_name&quot;: &quot;ROM&quot;,
+  &quot;description&quot;: &quot;passive ROM assessment shoulder extension/flexion three times&quot;,
+  &quot;original_trial_name&quot;: &quot;ex_o_1&quot;,
+  &quot;split&quot;: &quot;heldout&quot;,
+  &quot;repeat_group&quot;: &quot;shoulder_extension&quot;,
+  &quot;force_measurement&quot;: false,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;ROM/MoCap/shoulder_extension_kin.csv&quot;,
+    &quot;force_torque&quot;: null
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: null,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 4.416666666666667,
+    &quot;end&quot;: 33.041666666666664,
+    &quot;duration&quot;: 28.624999999999996,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 531,
+    &quot;end_frame&quot;: 3966
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {},
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      0.09399,
+      -0.96614,
+      0.69046
+    ],
+    &quot;max&quot;: [
+      0.45701,
+      -0.05741,
+      1.61757
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;kinematics-only trial: no force-torque recording; forces set to zero&quot;
+  ]
+}</pre></details>
+</body></html>

@@ -1,0 +1,56 @@
+{
+  "task_name": "turning_to_side_passive_kin",
+  "trial_id": "turning_to_side_passive_kin",
+  "category": "transfer",
+  "category_name": "Transfer",
+  "description": "therapist turns the inactive patient to the side",
+  "original_trial_name": "seitlich_inactive1",
+  "split": "optimization",
+  "repeat_group": "turning_to_side_passive_kin",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Transfer/MoCap/turning_to_side_passive_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.5833333333333335,
+    "end": 20.916666666666668,
+    "duration": 18.333333333333336,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 311,
+    "end_frame": 2511
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -1.4735,
+      0.00288,
+      0.90404
+    ],
+    "max": [
+      -0.61549,
+      1.12843,
+      1.23974
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

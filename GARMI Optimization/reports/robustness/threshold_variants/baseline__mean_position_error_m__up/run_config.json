@@ -1,0 +1,730 @@
+{
+  "baseline_profile": "outputs/variants/baseline__mean_position_error_m__up.yaml",
+  "baseline": {
+    "baseline": {
+      "name": "baseline__mean_position_error_m__up",
+      "description": "Threshold variant 'mean_position_error_m__up' of the baseline configuration (stage2_forces.yaml).",
+      "source_reference": "multipanda_ros2/garmi_packages/garmi_description/robots/garmi_sim.urdf.xacro"
+    },
+    "performance": {
+      "parallel_workers": "auto",
+      "progress": true
+    },
+    "controller": {
+      "mode": "operational_space_impedance",
+      "position_kp_npm": [
+        1200.0,
+        1200.0,
+        1200.0
+      ],
+      "position_kd_nspm": [
+        110.0,
+        110.0,
+        110.0
+      ],
+      "orientation_kp_nmprad": [
+        62.0,
+        62.0,
+        62.0
+      ],
+      "orientation_kd_nmsprad": [
+        7.5,
+        7.5,
+        7.5
+      ],
+      "max_task_force_n": 260.0,
+      "max_task_torque_nm": 55.0,
+      "base_pd": {
+        "kp": [
+          2400.0,
+          2400.0,
+          850.0
+        ],
+        "kd": [
+          520.0,
+          520.0,
+          160.0
+        ]
+      },
+      "nullspace_kp_nmprad": [
+        20.0,
+        18.0,
+        15.0,
+        12.0,
+        7.0,
+        5.0,
+        3.0
+      ],
+      "nullspace_kd_nmsprad": [
+        3.0,
+        2.6,
+        2.2,
+        1.8,
+        1.0,
+        0.7,
+        0.45
+      ],
+      "nullspace_damping": 0.035,
+      "bias_compensation": true
+    },
+    "simulation_validation": {
+      "mean_position_error_m": 0.05,
+      "max_position_error_m": 0.12,
+      "mean_orientation_error_rad": 0.9,
+      "max_orientation_error_rad": 1.75,
+      "max_joint_torque_clip_fraction": 0.0,
+      "max_unexpected_contact_count": 0,
+      "expected_contact_force_budget_n": 120.0,
+      "require_no_exception": true
+    },
+    "simulation": {
+      "enable_contacts": true
+    },
+    "environment": {
+      "enabled": false,
+      "categories": {},
+      "overrides": {}
+    },
+    "robustness": {
+      "ensemble": 3,
+      "translation_m": 0.1,
+      "yaw_rad": 0.17,
+      "scale": 0.05,
+      "seed": 20260705
+    },
+    "optimization": {
+      "optimizer": "bayesian",
+      "bayesian": {
+        "rounds": 4,
+        "batch": 12,
+        "pool": 2048,
+        "min_proposal_distance": 0.05
+      },
+      "promote_fraction": 0.45,
+      "promote_max": 16,
+      "surrogate_pool_size": 512,
+      "genetic": {
+        "population": 64,
+        "quick_generations": 5,
+        "reduced_generations": 4,
+        "elite_fraction": 0.2,
+        "mutation_sigma": 0.12,
+        "crossover_rate": 0.85,
+        "local_seed_fraction": 0.25,
+        "random_immigrant_fraction": 0.08,
+        "full_fraction": 0.35,
+        "tournament_size": 3
+      },
+      "mount_rotation_mode": "forward_outer_quarter_sphere",
+      "mount_rotation_quarter_sphere": {
+        "roll_rad": [
+          -0.65,
+          0.65
+        ],
+        "elevation_rad": [
+          -1.5706963267948966,
+          1.5706963267948966
+        ],
+        "azimuth_rad": [
+          0.0,
+          1.5707963267948966
+        ]
+      },
+      "mount_bounds": {
+        "left_x_m": [
+          -0.27,
+          -0.02
+        ],
+        "left_y_m": [
+          0.18,
+          0.46
+        ],
+        "left_z_m": [
+          0.78,
+          1.16
+        ],
+        "left_delta_roll_rad": [
+          -0.65,
+          0.65
+        ],
+        "left_delta_pitch_rad": [
+          -1.5706963267948966,
+          1.5706963267948966
+        ],
+        "left_delta_yaw_rad": [
+          0.0,
+          1.5707963267948966
+        ]
+      },
+      "design_variables": {
+        "base_policy": {
+          "enabled": true,
+          "bounds": {
+            "preferred_reach_fraction": [
+              0.58,
+              0.86
+            ],
+            "forward_offset_m": [
+              -0.16,
+              0.16
+            ],
+            "lateral_offset_m": [
+              -0.24,
+              0.24
+            ],
+            "yaw_offset_rad": [
+              -0.35,
+              0.35
+            ]
+          }
+        },
+        "ik": {
+          "enabled": false,
+          "bounds": {
+            "damping": [
+              0.015,
+              0.085
+            ],
+            "step_limit_rad": [
+              0.08,
+              0.28
+            ],
+            "orientation_weight": [
+              0.01,
+              0.1
+            ],
+            "joint_center_weight": [
+              0.0,
+              0.04
+            ],
+            "continuity_weight": [
+              0.0,
+              0.05
+            ]
+          }
+        },
+        "collision_ik": {
+          "enabled": false,
+          "bounds": {
+            "avoidance_start_m": [
+              0.05,
+              0.14
+            ],
+            "avoidance_target_m": [
+              0.03,
+              0.1
+            ],
+            "avoidance_step_rad": [
+              0.02,
+              0.09
+            ],
+            "avoidance_nullspace_damping": [
+              0.02,
+              0.09
+            ]
+          }
+        },
+        "controller": {
+          "enabled": false,
+          "bounds": {
+            "position_kp_multiplier": [
+              0.55,
+              1.65
+            ],
+            "position_kd_multiplier": [
+              0.55,
+              1.8
+            ],
+            "orientation_kp_multiplier": [
+              0.55,
+              1.8
+            ],
+            "orientation_kd_multiplier": [
+              0.55,
+              1.9
+            ],
+            "nullspace_kp_multiplier": [
+              0.35,
+              1.8
+            ],
+            "nullspace_kd_multiplier": [
+              0.35,
+              2.0
+            ],
+            "nullspace_damping": [
+              0.015,
+              0.08
+            ],
+            "max_task_force_n": [
+              180.0,
+              340.0
+            ],
+            "max_task_torque_nm": [
+              35.0,
+              75.0
+            ],
+            "base_kp_multiplier": [
+              0.55,
+              1.75
+            ],
+            "base_kd_multiplier": [
+              0.55,
+              1.85
+            ]
+          }
+        }
+      },
+      "fidelity": {
+        "constraint_guards": {
+          "quick": {
+            "torque_utilization_limit": 0.7,
+            "joint_speed_utilization_limit": 0.8,
+            "min_clearance_m": 0.035,
+            "mount_min_body_clearance_m": 0.015
+          },
+          "reduced": {
+            "torque_utilization_limit": 0.9,
+            "joint_speed_utilization_limit": 0.95,
+            "min_clearance_m": 0.015,
+            "mount_min_body_clearance_m": 0.005
+          },
+          "full": {
+            "torque_utilization_limit": 1.0,
+            "joint_speed_utilization_limit": 1.0,
+            "min_clearance_m": 0.0,
+            "mount_min_body_clearance_m": 0.0
+          }
+        },
+        "levels": {
+          "quick": {
+            "sample_stride": 12,
+            "max_samples": 60,
+            "base_search": "single",
+            "collision_aware_ik": false
+          },
+          "reduced": {
+            "sample_stride": 6,
+            "max_samples": 140,
+            "base_search": "reduced",
+            "collision_aware_ik": false
+          },
+          "full": {
+            "sample_stride": 1,
+            "max_samples": 0,
+            "base_search": "full",
+            "collision_aware_ik": true
+          }
+        }
+      }
+    },
+    "panda": {
+      "dof": 7,
+      "reference_mjcf": "resources/mujoco/franka/mj_dual.xml",
+      "reference_prefix": "mj_left",
+      "reference_root_offset_m": [
+        0.0,
+        0.26,
+        0.0
+      ],
+      "shoulder_width_m": 0.4,
+      "shoulder_height_m": 0.92451,
+      "shoulder_x_m": -0.14326,
+      "mounts": {
+        "left": {
+          "xyz_m": [
+            -0.14326,
+            0.2,
+            0.92451
+          ],
+          "rpy_rad": [
+            -1.5707963267948966,
+            0.0,
+            -1.5707963267948966
+          ]
+        },
+        "right": {
+          "xyz_m": [
+            -0.14326,
+            -0.2,
+            0.92451
+          ],
+          "rpy_rad": [
+            1.5707963267948966,
+            0.0,
+            1.5707963267948966
+          ]
+        }
+      },
+      "tool_offset_m": 0.1034,
+      "joint_limits_rad": {
+        "lower": [
+          -2.7437,
+          -1.7837,
+          -2.9007,
+          -3.0421,
+          -2.8065,
+          0.5445,
+          -3.0159
+        ],
+        "upper": [
+          2.7437,
+          1.7837,
+          2.9007,
+          -0.1518,
+          2.8065,
+          4.5169,
+          3.0159
+        ]
+      },
+      "torque_limits_nm": [
+        87.0,
+        87.0,
+        87.0,
+        87.0,
+        12.0,
+        12.0,
+        12.0
+      ],
+      "velocity_limits_radps": [
+        2.175,
+        2.175,
+        2.175,
+        2.175,
+        2.61,
+        2.61,
+        2.61
+      ],
+      "acceleration_limit_radps2": 7.5,
+      "nominal_q_rad": [
+        0.0,
+        -0.7853981633974483,
+        0.0,
+        -2.356194490192345,
+        0.0,
+        1.5707963267948966,
+        0.7853981633974483
+      ],
+      "inertia_proxy_kgm2": [
+        1.15,
+        1.05,
+        0.72,
+        0.55,
+        0.22,
+        0.12,
+        0.08
+      ],
+      "manipulability_reference": 0.08
+    },
+    "base": {
+      "motion_mode": "fixed_initial",
+      "fixed_pose": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "preferred_reach_fraction_candidates": [
+        0.62,
+        0.72,
+        0.82
+      ],
+      "forward_offset_candidates_m": [
+        -0.1,
+        0.0,
+        0.12
+      ],
+      "lateral_offset_candidates_m": [
+        -0.2,
+        0.0,
+        0.2
+      ],
+      "yaw_offset_candidates_rad": [
+        0.0
+      ],
+      "max_speed_mps": 0.85,
+      "max_acc_mps2": 1.6,
+      "limited_max_path_m": 0.75,
+      "limited_max_speed_mps": 0.2,
+      "limited_max_yaw_rate_radps": 0.35,
+      "nonholonomic_max_speed_mps": 0.85,
+      "nonholonomic_max_yaw_rate_radps": 0.75,
+      "smoothing_window": 7
+    },
+    "ik": {
+      "iterations": 35,
+      "discontinuity_jump_rad": 0.6,
+      "damping": 0.035,
+      "step_limit_rad": 0.18,
+      "position_tolerance_m": 0.02,
+      "use_orientation": true,
+      "orientation_mode": "relative",
+      "orientation_weight": 0.025,
+      "orientation_tolerance_rad": 0.25,
+      "joint_center_weight": 0.015,
+      "continuity_weight": 0.02
+    },
+    "collision": {
+      "enabled": true,
+      "hard_clearance_m": 0.0,
+      "warning_clearance_m": 0.05,
+      "collision_aware_ik": true,
+      "avoidance_start_m": 0.08,
+      "avoidance_target_m": 0.065,
+      "avoidance_iterations": 6,
+      "avoidance_step_rad": 0.065,
+      "avoidance_gradient_epsilon_rad": 0.01,
+      "avoidance_nullspace_damping": 0.045,
+      "avoidance_max_position_error_m": 0.075,
+      "avoidance_max_orientation_error_rad": 0.75,
+      "avoidance_min_improvement_m": 0.0005,
+      "arm_link_radius_m": 0.035,
+      "joint_radius_m": 0.045,
+      "end_effector_radius_m": 0.06,
+      "shoulder_mount_exclusion_m": 0.22,
+      "shoulder_mount_exclusion_points": 1
+    },
+    "success": {
+      "mean_position_error_m": 0.06,
+      "max_position_error_m": 0.12,
+      "mean_orientation_error_rad": 0.9,
+      "max_orientation_error_rad": 1.75,
+      "min_manipulability": 0.08,
+      "max_torque_utilization": 1.0,
+      "min_clearance_m": 0.0,
+      "max_time_scale": 1.5,
+      "max_ik_discontinuity_fraction": 0.05
+    },
+    "evaluation": {
+      "use_measured_forces": true
+    },
+    "_profile": "outputs/variants/baseline__mean_position_error_m__up.yaml",
+    "_profile_path": "outputs/variants/baseline__mean_position_error_m__up.yaml",
+    "task_frames": {
+      "defaults": {
+        "orientation_mode": "relative",
+        "free_tool_axis": false
+      },
+      "tasks": {
+        "walking_AAN_kin": {
+          "base_motion_mode": "nonholonomic"
+        },
+        "combing_hair_force": {
+          "base_motion_mode": "nonholonomic"
+        },
+        "combing_hair_kin": {
+          "base_motion_mode": "nonholonomic"
+        },
+        "combing_hair_AAN_force": {
+          "base_motion_mode": "nonholonomic"
+        },
+        "carrying_tray_force": {
+          "orientation_mode": "gravity_aligned"
+        },
+        "pouring_tea_force": {
+          "orientation_mode": "gravity_aligned"
+        },
+        "portioning_yoghurt_force": {
+          "orientation_mode": "gravity_aligned"
+        },
+        "portioning_yoghurt_kin": {
+          "orientation_mode": "gravity_aligned"
+        },
+        "administering_medication_force": {
+          "orientation_mode": "gravity_aligned"
+        },
+        "administering_medication_kin": {
+          "orientation_mode": "gravity_aligned"
+        },
+        "refilling_tea_front_kin": {
+          "orientation_mode": "gravity_aligned"
+        },
+        "refilling_tea_side_force": {
+          "orientation_mode": "gravity_aligned"
+        },
+        "wiping_table_force": {
+          "free_tool_axis": true
+        },
+        "wiping_table_kin": {
+          "free_tool_axis": true
+        },
+        "wiping_table_exercise_force": {
+          "free_tool_axis": true
+        },
+        "wiping_table_exercise_kin": {
+          "free_tool_axis": true
+        },
+        "opening_window_exercise_force": {
+          "free_tool_axis": true
+        },
+        "opening_window_exercise_kin": {
+          "free_tool_axis": true
+        },
+        "washing_upper_body_force": {
+          "free_tool_axis": true
+        },
+        "washing_upper_body_kin": {
+          "free_tool_axis": true
+        },
+        "washing_lower_body_kin": {
+          "free_tool_axis": true
+        },
+        "washing_lower_body_force": {
+          "free_tool_axis": true
+        }
+      }
+    },
+    "_task_weights": {
+      "preparing_blanket_force": 1.0,
+      "slicing_bread_force": 1.0,
+      "spreading_butter_force": 1.0,
+      "carrying_tray_force": 1.0,
+      "moving_chair_force": 1.0,
+      "folding_t_shirt_kin": 1.0,
+      "mopping_floor_force": 1.0,
+      "opening_drawer_force": 1.0,
+      "portioning_yoghurt_force": 1.0,
+      "cutting_bun_force": 1.0,
+      "pouring_tea_force": 1.0,
+      "drawing_curtain_force": 1.0,
+      "wiping_table_force": 1.0,
+      "combing_hair_force": 1.0,
+      "combing_hair_AAN_force": 1.0,
+      "putting_on_jacket_force": 1.0,
+      "administering_medication_force": 1.0,
+      "folding_newspaper_kin": 1.0,
+      "refilling_tea_front_kin": 1.0,
+      "changing_underpad_force": 1.0,
+      "walking_AAN_kin": 1.0,
+      "washing_lower_body_kin": 1.0,
+      "washing_upper_body_force": 1.0,
+      "mobi_leg_shank_force": 1.0,
+      "mobi_hip_rotation_force": 1.0,
+      "mobi_leg_force": 1.0,
+      "transfer_to_bed_edge_kin": 1.0,
+      "mobi_elbow_kin": 1.0,
+      "cardiovascular_activation_kin": 1.0,
+      "mobi_hip_kin": 1.0,
+      "mobi_knee_kin": 1.0,
+      "turning_to_side_AAN_kin": 1.0,
+      "turning_to_side_passive_kin": 1.0,
+      "mobi_shoulder_kin": 1.0,
+      "mobi_ankle_kin": 1.0,
+      "mobi_wrist_kin": 1.0,
+      "shoulder_abduction_force": 1.0,
+      "shoulder_abduction_janda_force": 1.0,
+      "shoulder_abduction_kin": 1.0,
+      "wiping_table_exercise_force": 1.0,
+      "wiping_table_exercise_kin": 1.0,
+      "standing_up_AAN_force": 1.0,
+      "elbow_extension_force": 1.0,
+      "elbow_flexion_janda_kin": 1.0,
+      "shoulder_extension_janda_force": 1.0,
+      "shoulder_extension_force": 1.0,
+      "opening_window_exercise_force": 1.0,
+      "shoulder_flexion_janda_force": 1.0,
+      "combing_hair_exercise_kin": 1.0,
+      "combing_hair_exercise_force": 1.0,
+      "tucking_shirt_exercise_force": 1.0,
+      "shoulder_internal_rotation_janda_kin": 1.0,
+      "elbow_rotation_kin": 1.0,
+      "shoulder_external_rotation_janda_force": 1.0,
+      "shoulder_rotation_force": 1.0
+    }
+  },
+  "task_names": [
+    "preparing_blanket_force",
+    "slicing_bread_force",
+    "spreading_butter_force",
+    "carrying_tray_force",
+    "moving_chair_force",
+    "folding_t_shirt_kin",
+    "mopping_floor_force",
+    "opening_drawer_force",
+    "portioning_yoghurt_force",
+    "cutting_bun_force",
+    "pouring_tea_force",
+    "drawing_curtain_force",
+    "wiping_table_force",
+    "combing_hair_force",
+    "combing_hair_AAN_force",
+    "putting_on_jacket_force",
+    "administering_medication_force",
+    "folding_newspaper_kin",
+    "refilling_tea_front_kin",
+    "changing_underpad_force",
+    "walking_AAN_kin",
+    "washing_lower_body_kin",
+    "washing_upper_body_force",
+    "mobi_leg_shank_force",
+    "mobi_hip_rotation_force",
+    "mobi_leg_force",
+    "transfer_to_bed_edge_kin",
+    "mobi_elbow_kin",
+    "cardiovascular_activation_kin",
+    "mobi_hip_kin",
+    "mobi_knee_kin",
+    "turning_to_side_AAN_kin",
+    "turning_to_side_passive_kin",
+    "mobi_shoulder_kin",
+    "mobi_ankle_kin",
+    "mobi_wrist_kin",
+    "shoulder_abduction_force",
+    "shoulder_abduction_janda_force",
+    "shoulder_abduction_kin",
+    "wiping_table_exercise_force",
+    "wiping_table_exercise_kin",
+    "standing_up_AAN_force",
+    "elbow_extension_force",
+    "elbow_flexion_janda_kin",
+    "shoulder_extension_janda_force",
+    "shoulder_extension_force",
+    "opening_window_exercise_force",
+    "shoulder_flexion_janda_force",
+    "combing_hair_exercise_kin",
+    "combing_hair_exercise_force",
+    "tucking_shirt_exercise_force",
+    "shoulder_internal_rotation_janda_kin",
+    "elbow_rotation_kin",
+    "shoulder_external_rotation_janda_force",
+    "shoulder_rotation_force"
+  ],
+  "aggregate": {
+    "group_name": "all_tasks",
+    "task_count": 55,
+    "success_count": 34,
+    "success_fraction": 0.6181818181818182,
+    "success_fraction_unweighted": 0.6181818181818182,
+    "mean_soft_loss": 1.2675163767394113,
+    "max_soft_loss": 6.634135609427115,
+    "success_fraction_nominal": 0.6181818181818182,
+    "kinematic_ok_fraction": 0.6909090909090909,
+    "position_ok_fraction": 0.7272727272727273,
+    "orientation_ok_fraction": 0.8181818181818182,
+    "manipulability_ok_fraction": 0.7090909090909091,
+    "torque_ok_fraction": 1.0,
+    "collision_free_fraction": 0.8363636363636363,
+    "motion_ok_fraction": 0.8909090909090909,
+    "mean_position_error_m": 0.020540790084510208,
+    "max_position_error_m": 0.5587900129514891,
+    "mean_orientation_error_rad": 0.3527989227204553,
+    "max_orientation_error_rad": 2.8308190171409344,
+    "min_manipulability": 0.006674267371767654,
+    "max_torque_utilization": 0.979817005362086,
+    "max_dynamic_torque_nm": 56.683612765416825,
+    "max_external_torque_nm": 31.700891281999954,
+    "max_total_torque_nm": 72.45100928750985,
+    "max_measured_force_n": 72.69411723722698,
+    "max_measured_task_torque_nm": 1.8915082543671544,
+    "max_joint_speed_utilization": 1.1527289568720567,
+    "min_clearance_m": -0.08445596432474801,
+    "min_clearance_margin_m": -0.08445596432474801,
+    "min_warning_clearance_margin_m": -0.13445596432474802,
+    "clearance_warning_fraction": 1.0,
+    "base_motion_mode": "fixed_initial",
+    "mean_base_path_length_m": 0.09338761041265808,
+    "max_base_speed_mps": 0.4335265421490946,
+    "max_base_acc_mps2": 0.22746753131908581,
+    "max_base_yaw_rate_radps": 0.051614786894123785,
+    "worst_task_by_objective": "mobi_hip_kin",
+    "most_common_primary_failure": "ok"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "task_name": "spreading_butter_force",
+  "trial_id": "spreading_butter_force",
+  "category": "meals",
+  "category_name": "Meals",
+  "description": "person spreads butter with knife on bread",
+  "original_trial_name": "butter1",
+  "split": "optimization",
+  "repeat_group": "spreading_butter",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Meals/MoCap/spreading_butter_force.csv",
+    "force_torque": "Meals/FT-sensor/spreading_butter_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.2083524231564438,
+    "end": 21.20375695933839,
+    "duration": 17.995404536181944,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 382,
+    "end_frame": 2519
+  },
+  "sensor_positions": {
+    "sensor1": "right hand",
+    "sensor2": null
+  },
+  "available_sensors": [
+    "sensor1"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": null
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 2.2051040252486085,
+      "mean": 0.9665626503156123
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -0.92627,
+      0.1295,
+      0.8013
+    ],
+    "max": [
+      -0.16436,
+      0.73119,
+      1.09637
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "Missing sensor2 nodes: sensor2:xplus, sensor2:xminus, sensor2:yminus"
+  ]
+}

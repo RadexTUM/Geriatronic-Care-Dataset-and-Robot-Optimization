@@ -1,0 +1,6 @@
+failure,task_count,task_fraction
+ok,44,0.8
+max_position_error,8,0.14545454545454545
+ik_discontinuity,1,0.01818181818181818
+inter_arm_collision,1,0.01818181818181818
+joint_speed_limit,1,0.01818181818181818

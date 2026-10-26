@@ -1,0 +1,56 @@
+{
+  "task_name": "shoulder_rotation_kin",
+  "trial_id": "shoulder_rotation_kin",
+  "category": "rom",
+  "category_name": "ROM",
+  "description": "passive ROM assessment shoulder internal/external rotation in 90\u00b0 shoulder abduction three times",
+  "original_trial_name": "rot_o_3",
+  "split": "heldout",
+  "repeat_group": "shoulder_rotation",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "ROM/MoCap/shoulder_rotation_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 4.358333333333333,
+    "end": 21.683333333333334,
+    "duration": 17.325,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 524,
+    "end_frame": 2603
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -0.06025,
+      -0.62683,
+      0.68021
+    ],
+    "max": [
+      0.51291,
+      -0.28075,
+      1.30829
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

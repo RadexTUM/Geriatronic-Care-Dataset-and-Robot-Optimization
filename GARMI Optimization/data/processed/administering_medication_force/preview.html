@@ -1,0 +1,75 @@
+<html><head><meta charset='utf-8'><title>administering_medication_force</title></head>
+<body><h2>administering_medication_force</h2>
+<p>therapist gives medication to patient on spoon</p>
+<p>category: Basic Care | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.445, 0.18, 0.134]</td><td>0.0</td></tr><tr><td>right</td><td>[0.502, 0.241, 0.579]</td><td>2.4</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;administering_medication_force&quot;,
+  &quot;trial_id&quot;: &quot;administering_medication_force&quot;,
+  &quot;category&quot;: &quot;basic_care&quot;,
+  &quot;category_name&quot;: &quot;Basic Care&quot;,
+  &quot;description&quot;: &quot;therapist gives medication to patient on spoon&quot;,
+  &quot;original_trial_name&quot;: &quot;medication4&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;administering_medication&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Basic Care/MoCap/administering_medication_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Basic Care/FT-sensor/administering_medication_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 3.4725801192582026,
+    &quot;end&quot;: 25.897207669044224,
+    &quot;duration&quot;: 22.42462754978602,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 414,
+    &quot;end_frame&quot;: 3081
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;right hand&quot;,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: &quot;right&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 7.924225585994721,
+      &quot;mean&quot;: 2.4396007849314243
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 3.635575984690459,
+      &quot;mean&quot;: 0.6445408337196025
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -1.35289,
+      -0.01292,
+      0.83504
+    ],
+    &quot;max&quot;: [
+      -0.81695,
+      0.66296,
+      1.41381
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;sensor2: inferred right end-effector by wrist proximity (left=0.709 m, right=0.375 m)&quot;
+  ]
+}</pre></details>
+</body></html>

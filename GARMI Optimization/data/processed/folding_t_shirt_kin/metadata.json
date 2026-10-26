@@ -1,0 +1,56 @@
+{
+  "task_name": "folding_t_shirt_kin",
+  "trial_id": "folding_t_shirt_kin",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "person folds a T-Shirt",
+  "original_trial_name": "fold1",
+  "split": "optimization",
+  "repeat_group": "folding_t_shirt_kin",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/folding_t_shirt_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.8833333333333333,
+    "end": 13.725,
+    "duration": 10.841666666666667,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 347,
+    "end_frame": 1648
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -1.15896,
+      -0.19351,
+      0.75715
+    ],
+    "max": [
+      -0.58565,
+      0.55956,
+      1.29523
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

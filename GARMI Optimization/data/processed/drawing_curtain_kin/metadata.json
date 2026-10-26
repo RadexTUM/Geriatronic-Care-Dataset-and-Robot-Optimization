@@ -1,0 +1,56 @@
+{
+  "task_name": "drawing_curtain_kin",
+  "trial_id": "drawing_curtain_kin",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "person grasps curtain with one hand and draws it",
+  "original_trial_name": "vorhang1",
+  "split": "heldout",
+  "repeat_group": "drawing_curtain",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/drawing_curtain_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.0,
+    "end": 6.991666666666666,
+    "duration": 3.9916666666666663,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 361,
+    "end_frame": 840
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -1.22572,
+      -1.5686,
+      0.52678
+    ],
+    "max": [
+      -0.06758,
+      -0.74485,
+      1.09859
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

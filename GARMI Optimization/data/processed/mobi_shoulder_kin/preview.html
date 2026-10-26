@@ -1,0 +1,63 @@
+<html><head><meta charset='utf-8'><title>mobi_shoulder_kin</title></head>
+<body><h2>mobi_shoulder_kin</h2>
+<p>therapist mobilizes patient´s left shoulder</p>
+<p>category: Geriatric Rehabilitation | split: optimization |
+force measurement: False</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.305, 0.383, 0.227]</td><td>0.0</td></tr><tr><td>right</td><td>[0.163, 0.371, 0.36]</td><td>0.0</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;mobi_shoulder_kin&quot;,
+  &quot;trial_id&quot;: &quot;mobi_shoulder_kin&quot;,
+  &quot;category&quot;: &quot;geriatric_rehabilitation&quot;,
+  &quot;category_name&quot;: &quot;Geriatric Rehabilitation&quot;,
+  &quot;description&quot;: &quot;therapist mobilizes patient\u00b4s left shoulder&quot;,
+  &quot;original_trial_name&quot;: &quot;shoulder2&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;mobi_shoulder_kin&quot;,
+  &quot;force_measurement&quot;: false,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Geriatric Rehabilitation/MoCap/mobi_shoulder_kin.csv&quot;,
+    &quot;force_torque&quot;: null
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: null,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 1.625,
+    &quot;end&quot;: 21.183333333333334,
+    &quot;duration&quot;: 19.558333333333334,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 196,
+    &quot;end_frame&quot;: 2543
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {},
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -0.90439,
+      0.61665,
+      0.86282
+    ],
+    &quot;max&quot;: [
+      -0.56785,
+      1.08538,
+      1.26222
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;kinematics-only trial: no force-torque recording; forces set to zero&quot;
+  ]
+}</pre></details>
+</body></html>

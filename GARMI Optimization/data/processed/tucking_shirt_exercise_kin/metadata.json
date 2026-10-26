@@ -1,0 +1,56 @@
+{
+  "task_name": "tucking_shirt_exercise_kin",
+  "trial_id": "tucking_shirt_exercise_kin",
+  "category": "geriatric_rehabilitation",
+  "category_name": "Geriatric Rehabilitation",
+  "description": "exercise: passive mobilisation for ADL tuck shirt in trousers three times",
+  "original_trial_name": "hemd_o_2",
+  "split": "heldout",
+  "repeat_group": "tucking_shirt_exercise",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Geriatric Rehabilitation/MoCap/tucking_shirt_exercise_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.1666666666666665,
+    "end": 19.425,
+    "duration": 16.258333333333333,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 381,
+    "end_frame": 2332
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      0.09214,
+      -0.84235,
+      0.67312
+    ],
+    "max": [
+      0.55585,
+      -0.27463,
+      1.26328
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

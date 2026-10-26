@@ -1,0 +1,63 @@
+<html><head><meta charset='utf-8'><title>shoulder_external_rotation_janda_kin</title></head>
+<body><h2>shoulder_external_rotation_janda_kin</h2>
+<p>muscle function test Janda shoulder external rotation</p>
+<p>category: ROM | split: heldout |
+force measurement: False</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.064, 0.155, 0.141]</td><td>0.0</td></tr><tr><td>right</td><td>[0.011, 0.03, 0.014]</td><td>0.0</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;shoulder_external_rotation_janda_kin&quot;,
+  &quot;trial_id&quot;: &quot;shoulder_external_rotation_janda_kin&quot;,
+  &quot;category&quot;: &quot;rom&quot;,
+  &quot;category_name&quot;: &quot;ROM&quot;,
+  &quot;description&quot;: &quot;muscle function test Janda shoulder external rotation&quot;,
+  &quot;original_trial_name&quot;: &quot;rot_janda_o_4&quot;,
+  &quot;split&quot;: &quot;heldout&quot;,
+  &quot;repeat_group&quot;: &quot;shoulder_external_rotation_janda&quot;,
+  &quot;force_measurement&quot;: false,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;ROM/MoCap/shoulder_external_rotation_janda_kin.csv&quot;,
+    &quot;force_torque&quot;: null
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: null,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 4.358333333333333,
+    &quot;end&quot;: 8.891666666666667,
+    &quot;duration&quot;: 4.533333333333334,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 524,
+    &quot;end_frame&quot;: 1068
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {},
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      0.19129,
+      -0.60371,
+      0.72964
+    ],
+    &quot;max&quot;: [
+      0.33757,
+      -0.30724,
+      1.11422
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;kinematics-only trial: no force-torque recording; forces set to zero&quot;
+  ]
+}</pre></details>
+</body></html>

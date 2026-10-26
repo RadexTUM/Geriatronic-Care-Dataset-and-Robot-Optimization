@@ -1,0 +1,246 @@
+# Task groups of the study reported in the paper (81 trials, five functional
+# categories).
+#
+# groups:
+#   all_tasks           optimization split (55 trials); used by --global
+#   <category>          optimization split of one functional category
+#   heldout_all         held-out split (26 repeat trials); never used in a search
+#   heldout_<category>  held-out split of one functional category
+#
+# repeat_groups:
+#   Recordings that are divided between the two splits: one trial of each
+#   group belongs to the optimization split (the force-equipped recording if
+#   available), the other recordings form the held-out split. The grouping
+#   follows the trial numbering of the original recording sessions (e.g. the
+#   recordings 'chair2' and 'chair6' became clearing_floor_kin and
+#   moving_chair_force), see the column "Trial name (old)" in
+#   Trials_Description.xlsx. Trials that are not listed form a group of their
+#   own. The repeat groups are used for the clustered bootstrap.
+#
+# Trials of the dataset that are not listed here were not part of the study.
+# The browser tool (garmi-opt gui) can create additional groups.
+groups:
+  all_tasks:
+    description: Optimization split, all functional categories (55 trials).
+    tasks:
+    - administering_medication_force
+    - changing_underpad_force
+    - combing_hair_AAN_force
+    - combing_hair_force
+    - drawing_curtain_force
+    - folding_t_shirt_kin
+    - opening_drawer_force
+    - preparing_blanket_force
+    - putting_on_jacket_force
+    - washing_lower_body_kin
+    - washing_upper_body_force
+    - carrying_tray_force
+    - cutting_bun_force
+    - folding_newspaper_kin
+    - mopping_floor_force
+    - portioning_yoghurt_force
+    - pouring_tea_force
+    - refilling_tea_front_kin
+    - slicing_bread_force
+    - spreading_butter_force
+    - wiping_table_force
+    - moving_chair_force
+    - standing_up_AAN_force
+    - transfer_to_bed_edge_kin
+    - turning_to_side_AAN_kin
+    - turning_to_side_passive_kin
+    - walking_AAN_kin
+    - elbow_extension_force
+    - elbow_flexion_janda_kin
+    - elbow_rotation_kin
+    - shoulder_abduction_force
+    - shoulder_abduction_janda_force
+    - shoulder_abduction_kin
+    - shoulder_extension_force
+    - shoulder_extension_janda_force
+    - shoulder_external_rotation_janda_force
+    - shoulder_flexion_janda_force
+    - shoulder_internal_rotation_janda_kin
+    - shoulder_rotation_force
+    - cardiovascular_activation_kin
+    - combing_hair_exercise_force
+    - combing_hair_exercise_kin
+    - mobi_ankle_kin
+    - mobi_elbow_kin
+    - mobi_hip_kin
+    - mobi_hip_rotation_force
+    - mobi_knee_kin
+    - mobi_leg_force
+    - mobi_leg_shank_force
+    - mobi_shoulder_kin
+    - mobi_wrist_kin
+    - opening_window_exercise_force
+    - tucking_shirt_exercise_force
+    - wiping_table_exercise_force
+    - wiping_table_exercise_kin
+  basic_care:
+    description: Optimization split, functional category 'Basic Care' (11 trials).
+    tasks:
+    - administering_medication_force
+    - changing_underpad_force
+    - combing_hair_AAN_force
+    - combing_hair_force
+    - drawing_curtain_force
+    - folding_t_shirt_kin
+    - opening_drawer_force
+    - preparing_blanket_force
+    - putting_on_jacket_force
+    - washing_lower_body_kin
+    - washing_upper_body_force
+  meals:
+    description: Optimization split, functional category 'Meals' (10 trials).
+    tasks:
+    - carrying_tray_force
+    - cutting_bun_force
+    - folding_newspaper_kin
+    - mopping_floor_force
+    - portioning_yoghurt_force
+    - pouring_tea_force
+    - refilling_tea_front_kin
+    - slicing_bread_force
+    - spreading_butter_force
+    - wiping_table_force
+  transfer:
+    description: Optimization split, functional category 'Transfer' (6 trials).
+    tasks:
+    - moving_chair_force
+    - standing_up_AAN_force
+    - transfer_to_bed_edge_kin
+    - turning_to_side_AAN_kin
+    - turning_to_side_passive_kin
+    - walking_AAN_kin
+  rom:
+    description: Optimization split, functional category 'ROM' (12 trials).
+    tasks:
+    - elbow_extension_force
+    - elbow_flexion_janda_kin
+    - elbow_rotation_kin
+    - shoulder_abduction_force
+    - shoulder_abduction_janda_force
+    - shoulder_abduction_kin
+    - shoulder_extension_force
+    - shoulder_extension_janda_force
+    - shoulder_external_rotation_janda_force
+    - shoulder_flexion_janda_force
+    - shoulder_internal_rotation_janda_kin
+    - shoulder_rotation_force
+  geriatric_rehabilitation:
+    description: Optimization split, functional category 'Geriatric Rehabilitation' (16 trials).
+    tasks:
+    - cardiovascular_activation_kin
+    - combing_hair_exercise_force
+    - combing_hair_exercise_kin
+    - mobi_ankle_kin
+    - mobi_elbow_kin
+    - mobi_hip_kin
+    - mobi_hip_rotation_force
+    - mobi_knee_kin
+    - mobi_leg_force
+    - mobi_leg_shank_force
+    - mobi_shoulder_kin
+    - mobi_wrist_kin
+    - opening_window_exercise_force
+    - tucking_shirt_exercise_force
+    - wiping_table_exercise_force
+    - wiping_table_exercise_kin
+  heldout_all:
+    description: Held-out repeat trials, all functional categories (26 trials). Never used for optimization.
+    tasks:
+    - administering_medication_kin
+    - changing_underpad_kin
+    - combing_hair_kin
+    - drawing_curtain_kin
+    - preparing_blanket_kin
+    - washing_lower_body_force
+    - washing_upper_body_kin
+    - cutting_bun_kin
+    - folding_newspaper_force
+    - mopping_floor_kin
+    - portioning_yoghurt_kin
+    - refilling_tea_side_force
+    - slicing_bread_kin
+    - spreading_butter_kin
+    - wiping_table_kin
+    - clearing_floor_kin
+    - standing_up_AAN_force_2
+    - standing_up_AAN_kin
+    - shoulder_abduction_janda_kin
+    - shoulder_extension_janda_kin
+    - shoulder_extension_kin
+    - shoulder_external_rotation_janda_kin
+    - shoulder_flexion_janda_kin
+    - shoulder_rotation_kin
+    - opening_window_exercise_kin
+    - tucking_shirt_exercise_kin
+  heldout_basic_care:
+    description: Held-out repeat trials, functional category 'Basic Care' (7 trials).
+    tasks:
+    - administering_medication_kin
+    - changing_underpad_kin
+    - combing_hair_kin
+    - drawing_curtain_kin
+    - preparing_blanket_kin
+    - washing_lower_body_force
+    - washing_upper_body_kin
+  heldout_meals:
+    description: Held-out repeat trials, functional category 'Meals' (8 trials).
+    tasks:
+    - cutting_bun_kin
+    - folding_newspaper_force
+    - mopping_floor_kin
+    - portioning_yoghurt_kin
+    - refilling_tea_side_force
+    - slicing_bread_kin
+    - spreading_butter_kin
+    - wiping_table_kin
+  heldout_transfer:
+    description: Held-out repeat trials, functional category 'Transfer' (3 trials).
+    tasks:
+    - clearing_floor_kin
+    - standing_up_AAN_force_2
+    - standing_up_AAN_kin
+  heldout_rom:
+    description: Held-out repeat trials, functional category 'ROM' (6 trials).
+    tasks:
+    - shoulder_abduction_janda_kin
+    - shoulder_extension_janda_kin
+    - shoulder_extension_kin
+    - shoulder_external_rotation_janda_kin
+    - shoulder_flexion_janda_kin
+    - shoulder_rotation_kin
+  heldout_geriatric_rehabilitation:
+    description: Held-out repeat trials, functional category 'Geriatric Rehabilitation' (2 trials).
+    tasks:
+    - opening_window_exercise_kin
+    - tucking_shirt_exercise_kin
+repeat_groups:
+  administering_medication: [administering_medication_force, administering_medication_kin]
+  changing_underpad: [changing_underpad_force, changing_underpad_kin]
+  combing_hair: [combing_hair_force, combing_hair_kin]
+  cutting_bun: [cutting_bun_force, cutting_bun_kin]
+  drawing_curtain: [drawing_curtain_force, drawing_curtain_kin]
+  folding_newspaper: [folding_newspaper_kin, folding_newspaper_force]
+  mopping_floor: [mopping_floor_force, mopping_floor_kin]
+  moving_chair: [moving_chair_force, clearing_floor_kin]
+  opening_window_exercise: [opening_window_exercise_force, opening_window_exercise_kin]
+  portioning_yoghurt: [portioning_yoghurt_force, portioning_yoghurt_kin]
+  preparing_blanket: [preparing_blanket_force, preparing_blanket_kin]
+  refilling_tea: [refilling_tea_front_kin, refilling_tea_side_force]
+  shoulder_abduction_janda: [shoulder_abduction_janda_force, shoulder_abduction_janda_kin]
+  shoulder_extension: [shoulder_extension_force, shoulder_extension_kin]
+  shoulder_extension_janda: [shoulder_extension_janda_force, shoulder_extension_janda_kin]
+  shoulder_external_rotation_janda: [shoulder_external_rotation_janda_force, shoulder_external_rotation_janda_kin]
+  shoulder_flexion_janda: [shoulder_flexion_janda_force, shoulder_flexion_janda_kin]
+  shoulder_rotation: [shoulder_rotation_force, shoulder_rotation_kin]
+  slicing_bread: [slicing_bread_force, slicing_bread_kin]
+  spreading_butter: [spreading_butter_force, spreading_butter_kin]
+  standing_up_AAN: [standing_up_AAN_force, standing_up_AAN_force_2, standing_up_AAN_kin]
+  tucking_shirt_exercise: [tucking_shirt_exercise_force, tucking_shirt_exercise_kin]
+  washing_lower_body: [washing_lower_body_kin, washing_lower_body_force]
+  washing_upper_body: [washing_upper_body_force, washing_upper_body_kin]
+  wiping_table: [wiping_table_force, wiping_table_kin]

@@ -1,0 +1,56 @@
+{
+  "task_name": "changing_underpad_kin",
+  "trial_id": "changing_underpad_kin",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "therapist moves patient to the side to change underpad",
+  "original_trial_name": "underpad1",
+  "split": "heldout",
+  "repeat_group": "changing_underpad",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/changing_underpad_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 5.733333333333333,
+    "end": 40.94166666666667,
+    "duration": 35.208333333333336,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 689,
+    "end_frame": 4914
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -1.42159,
+      -0.46435,
+      0.88105
+    ],
+    "max": [
+      -0.54276,
+      1.20173,
+      1.49514
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

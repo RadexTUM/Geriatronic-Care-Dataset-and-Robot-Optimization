@@ -1,0 +1,74 @@
+<html><head><meta charset='utf-8'><title>standing_up_AAN_force_2</title></head>
+<body><h2>standing_up_AAN_force_2</h2>
+<p>exercise: support for standing up three times from the front</p>
+<p>category: Transfer | split: heldout |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.121, 0.58, 0.346]</td><td>18.1</td></tr><tr><td>right</td><td>[0.11, 0.582, 0.418]</td><td>19.3</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;standing_up_AAN_force_2&quot;,
+  &quot;trial_id&quot;: &quot;standing_up_AAN_force_2&quot;,
+  &quot;category&quot;: &quot;transfer&quot;,
+  &quot;category_name&quot;: &quot;Transfer&quot;,
+  &quot;description&quot;: &quot;exercise: support for standing up three times from the front&quot;,
+  &quot;original_trial_name&quot;: &quot;aufstehen_k_3&quot;,
+  &quot;split&quot;: &quot;heldout&quot;,
+  &quot;repeat_group&quot;: &quot;standing_up_AAN&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Transfer/MoCap/standing_up_AAN_force_2.csv&quot;,
+    &quot;force_torque&quot;: &quot;Transfer/FT-sensor/standing_up_AAN_force_2_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 5.194307505137463,
+    &quot;end&quot;: 26.52626939516801,
+    &quot;duration&quot;: 21.33196189003055,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 619,
+    &quot;end_frame&quot;: 3157
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;right wrist&quot;,
+    &quot;sensor2&quot;: &quot;left wrist&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: &quot;left&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 21.263029095344425,
+      &quot;mean&quot;: 8.420710544572058
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 19.34716849824007,
+      &quot;mean&quot;: 8.60183871827929
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      0.28859,
+      0.00591,
+      0.78161
+    ],
+    &quot;max&quot;: [
+      0.86366,
+      0.60416,
+      1.20357
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;
+  ]
+}</pre></details>
+</body></html>

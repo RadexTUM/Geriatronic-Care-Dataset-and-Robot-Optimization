@@ -1,0 +1,75 @@
+<html><head><meta charset='utf-8'><title>shoulder_extension_force</title></head>
+<body><h2>shoulder_extension_force</h2>
+<p>passive ROM assessment shoulder extension/flexion three times</p>
+<p>category: ROM | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.591, 0.977, 1.374]</td><td>42.7</td></tr><tr><td>right</td><td>[0.599, 0.699, 1.048]</td><td>40.6</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;shoulder_extension_force&quot;,
+  &quot;trial_id&quot;: &quot;shoulder_extension_force&quot;,
+  &quot;category&quot;: &quot;rom&quot;,
+  &quot;category_name&quot;: &quot;ROM&quot;,
+  &quot;description&quot;: &quot;passive ROM assessment shoulder extension/flexion three times&quot;,
+  &quot;original_trial_name&quot;: &quot;ex_k_2&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;shoulder_extension&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;ROM/MoCap/shoulder_extension_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;ROM/FT-sensor/shoulder_extension_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 7.278900207282914,
+    &quot;end&quot;: 39.65658880212085,
+    &quot;duration&quot;: 32.377688594837934,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 869,
+    &quot;end_frame&quot;: 4730
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;left acromion&quot;,
+    &quot;sensor2&quot;: &quot;left wrist&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: &quot;left&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 45.52385560388578,
+      &quot;mean&quot;: 15.763275023040643
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 45.261054364400174,
+      &quot;mean&quot;: 14.2667836738133
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -0.32204,
+      -1.05834,
+      0.27577
+    ],
+    &quot;max&quot;: [
+      0.4244,
+      -0.00316,
+      1.6496
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;sensor1: inferred right end-effector by wrist proximity (left=0.548 m, right=0.123 m)&quot;
+  ]
+}</pre></details>
+</body></html>

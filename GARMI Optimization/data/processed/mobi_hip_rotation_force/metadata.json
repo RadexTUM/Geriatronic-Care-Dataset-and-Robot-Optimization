@@ -1,0 +1,69 @@
+{
+  "task_name": "mobi_hip_rotation_force",
+  "trial_id": "mobi_hip_rotation_force",
+  "category": "geriatric_rehabilitation",
+  "category_name": "Geriatric Rehabilitation",
+  "description": "therapist turns patienst\u00b4s left leg",
+  "original_trial_name": "bein_beideunten_drehen_1",
+  "split": "optimization",
+  "repeat_group": "mobi_hip_rotation_force",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Geriatric Rehabilitation/MoCap/mobi_hip_rotation_force.csv",
+    "force_torque": "Geriatric Rehabilitation/FT-sensor/mobi_hip_rotation_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 1.7839314626300853,
+    "end": 24.226125853358564,
+    "duration": 22.442194390728478,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 213,
+    "end_frame": 2880
+  },
+  "sensor_positions": {
+    "sensor1": "patient left lower leg proximal",
+    "sensor2": "patient left lower leg distal"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 40.81521348597562,
+      "mean": 16.178122927965454
+    },
+    "sensor2": {
+      "max": 37.64264221274219,
+      "mean": 23.369213403889425
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -0.94758,
+      -0.24626,
+      0.98436
+    ],
+    "max": [
+      -0.63321,
+      0.5796,
+      1.41474
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred right end-effector by wrist proximity (left=0.290 m, right=0.135 m)",
+    "sensor2: inferred left end-effector by wrist proximity (left=0.117 m, right=0.322 m)"
+  ]
+}

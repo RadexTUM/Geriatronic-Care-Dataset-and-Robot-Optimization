@@ -1,0 +1,56 @@
+{
+  "task_name": "clearing_floor_kin",
+  "trial_id": "clearing_floor_kin",
+  "category": "transfer",
+  "category_name": "Transfer",
+  "description": "person picks something up from floor and lifts chair",
+  "original_trial_name": "chair2",
+  "split": "heldout",
+  "repeat_group": "moving_chair",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Transfer/MoCap/clearing_floor_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.15,
+    "end": 9.933333333333334,
+    "duration": 7.783333333333333,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 259,
+    "end_frame": 1193
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -0.72146,
+      -0.61456,
+      0.10941
+    ],
+    "max": [
+      0.24529,
+      0.80655,
+      1.03627
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

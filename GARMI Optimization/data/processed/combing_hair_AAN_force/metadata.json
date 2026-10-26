@@ -1,0 +1,64 @@
+{
+  "task_name": "combing_hair_AAN_force",
+  "trial_id": "combing_hair_AAN_force",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "therapist only assists if required",
+  "original_trial_name": "hairassist1",
+  "split": "optimization",
+  "repeat_group": "combing_hair_AAN_force",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/combing_hair_AAN_force.csv",
+    "force_torque": "Basic Care/FT-sensor/combing_hair_AAN_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.405663361036469,
+    "end": 41.66743054952016,
+    "duration": 39.261767188483695,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 288,
+    "end_frame": 4972
+  },
+  "sensor_positions": {
+    "sensor1": "patient right arm",
+    "sensor2": null
+  },
+  "available_sensors": [
+    "sensor1"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": null
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 11.373587266915962,
+      "mean": 3.438046855843701
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -1.86509,
+      0.38631,
+      0.82842
+    ],
+    "max": [
+      -0.57834,
+      1.04396,
+      1.34713
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "Missing sensor2 nodes: sensor2:xplus, sensor2:xminus, sensor2:yminus",
+    "sensor1: inferred right end-effector by wrist proximity (left=0.561 m, right=0.140 m)"
+  ]
+}

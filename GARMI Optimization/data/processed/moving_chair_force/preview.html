@@ -1,0 +1,70 @@
+<html><head><meta charset='utf-8'><title>moving_chair_force</title></head>
+<body><h2>moving_chair_force</h2>
+<p>person slides chair on floor</p>
+<p>category: Transfer | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.119, 0.176, 0.028]</td><td>0.0</td></tr><tr><td>right</td><td>[0.442, 0.056, 0.015]</td><td>34.2</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;moving_chair_force&quot;,
+  &quot;trial_id&quot;: &quot;moving_chair_force&quot;,
+  &quot;category&quot;: &quot;transfer&quot;,
+  &quot;category_name&quot;: &quot;Transfer&quot;,
+  &quot;description&quot;: &quot;person slides chair on floor&quot;,
+  &quot;original_trial_name&quot;: &quot;chair6&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;moving_chair&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Transfer/MoCap/moving_chair_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Transfer/FT-sensor/moving_chair_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 3.5165468515962033,
+    &quot;end&quot;: 6.52828527437446,
+    &quot;duration&quot;: 3.011738422778257,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 412,
+    &quot;end_frame&quot;: 764
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;right hand&quot;,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 34.29842520951294,
+      &quot;mean&quot;: 6.9541599843371245
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -0.64541,
+      0.02295,
+      0.8336
+    ],
+    &quot;max&quot;: [
+      0.18311,
+      0.1986,
+      1.05033
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;Missing sensor2 nodes: sensor2:xplus, sensor2:xminus, sensor2:yminus&quot;
+  ]
+}</pre></details>
+</body></html>

@@ -1,0 +1,74 @@
+<html><head><meta charset='utf-8'><title>carrying_tray_force</title></head>
+<body><h2>carrying_tray_force</h2>
+<p>person carries tray with two arms</p>
+<p>category: Meals | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.758, 0.268, 0.451]</td><td>9.3</td></tr><tr><td>right</td><td>[0.803, 0.212, 0.477]</td><td>9.2</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;carrying_tray_force&quot;,
+  &quot;trial_id&quot;: &quot;carrying_tray_force&quot;,
+  &quot;category&quot;: &quot;meals&quot;,
+  &quot;category_name&quot;: &quot;Meals&quot;,
+  &quot;description&quot;: &quot;person carries tray with two arms&quot;,
+  &quot;original_trial_name&quot;: &quot;carrytray2&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;carrying_tray_force&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Meals/MoCap/carrying_tray_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Meals/FT-sensor/carrying_tray_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 4.457012032299192,
+    &quot;end&quot;: 9.133498141946452,
+    &quot;duration&quot;: 4.67648610964726,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 529,
+    &quot;end_frame&quot;: 1083
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;right hand&quot;,
+    &quot;sensor2&quot;: &quot;left hand&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: &quot;left&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 9.400646105317637,
+      &quot;mean&quot;: 1.7561063578455651
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 9.355961457498145,
+      &quot;mean&quot;: 1.7565972135091525
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -0.645,
+      0.19882,
+      0.7103
+    ],
+    &quot;max&quot;: [
+      0.72738,
+      0.49482,
+      1.20446
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;
+  ]
+}</pre></details>
+</body></html>

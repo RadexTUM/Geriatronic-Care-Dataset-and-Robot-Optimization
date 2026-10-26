@@ -1,0 +1,4 @@
+failure,task_count,task_fraction
+ok,5,0.5
+max_position_error,4,0.4
+max_orientation_error,1,0.1

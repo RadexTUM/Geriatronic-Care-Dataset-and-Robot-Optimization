@@ -1,0 +1,4 @@
+failure,task_count,task_fraction
+ok,10,0.8333333333333334
+inter_arm_collision,1,0.08333333333333333
+max_position_error,1,0.08333333333333333

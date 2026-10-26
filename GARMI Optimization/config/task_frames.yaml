@@ -1,0 +1,63 @@
+# Task-frame and base-mobility annotations (paper Sec. IV-C).
+#
+# orientation_mode  relative (default): the relative wrist rotation of the
+#                   demonstration is tracked; gravity_aligned: only the tilt
+#                   against gravity is constrained; free: orientation ignored.
+# free_tool_axis    true removes the rotation about the tool axis from the
+#                   orientation error.
+# base_motion_mode  per-trial override of the base model for locomotion-bound
+#                   activities (default: base fixed after the initial placement).
+#
+# Repeat trials of the same scenario are annotated identically.
+task_frames:
+  defaults:
+    orientation_mode: relative
+    free_tool_axis: false
+  tasks:
+    # Locomotion-bound tasks: the base follows the demonstrator (nonholonomic base model).
+    combing_hair_AAN_force:
+      base_motion_mode: nonholonomic
+    combing_hair_force:
+      base_motion_mode: nonholonomic
+    combing_hair_kin:
+      base_motion_mode: nonholonomic
+    walking_AAN_kin:
+      base_motion_mode: nonholonomic
+    # Carrying, pouring and serving: gravity-aligned tilt (heading is free).
+    administering_medication_force:
+      orientation_mode: gravity_aligned
+    administering_medication_kin:
+      orientation_mode: gravity_aligned
+    carrying_tray_force:
+      orientation_mode: gravity_aligned
+    portioning_yoghurt_force:
+      orientation_mode: gravity_aligned
+    portioning_yoghurt_kin:
+      orientation_mode: gravity_aligned
+    pouring_tea_force:
+      orientation_mode: gravity_aligned
+    refilling_tea_front_kin:
+      orientation_mode: gravity_aligned
+    refilling_tea_side_force:
+      orientation_mode: gravity_aligned
+    # Wiping and washing: rotation about the tool axis is free.
+    opening_window_exercise_force:
+      free_tool_axis: true
+    opening_window_exercise_kin:
+      free_tool_axis: true
+    washing_lower_body_force:
+      free_tool_axis: true
+    washing_lower_body_kin:
+      free_tool_axis: true
+    washing_upper_body_force:
+      free_tool_axis: true
+    washing_upper_body_kin:
+      free_tool_axis: true
+    wiping_table_exercise_force:
+      free_tool_axis: true
+    wiping_table_exercise_kin:
+      free_tool_axis: true
+    wiping_table_force:
+      free_tool_axis: true
+    wiping_table_kin:
+      free_tool_axis: true

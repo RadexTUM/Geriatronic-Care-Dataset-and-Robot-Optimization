@@ -1,0 +1,70 @@
+<html><head><meta charset='utf-8'><title>wiping_table_force</title></head>
+<body><h2>wiping_table_force</h2>
+<p>person wipes table with a cloth with one hand</p>
+<p>category: Meals | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.641, 0.393, 0.189]</td><td>0.0</td></tr><tr><td>right</td><td>[0.915, 0.381, 0.315]</td><td>21.6</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;wiping_table_force&quot;,
+  &quot;trial_id&quot;: &quot;wiping_table_force&quot;,
+  &quot;category&quot;: &quot;meals&quot;,
+  &quot;category_name&quot;: &quot;Meals&quot;,
+  &quot;description&quot;: &quot;person wipes table with a cloth with one hand&quot;,
+  &quot;original_trial_name&quot;: &quot;wipetable6&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;wiping_table&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Meals/MoCap/wiping_table_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Meals/FT-sensor/wiping_table_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 3.4697541437308863,
+    &quot;end&quot;: 13.345859230886848,
+    &quot;duration&quot;: 9.876105087155961,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 411,
+    &quot;end_frame&quot;: 1578
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;right hand&quot;,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 22.002325646294395,
+      &quot;mean&quot;: 5.041159919678155
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -1.04427,
+      0.08519,
+      0.77063
+    ],
+    &quot;max&quot;: [
+      0.084,
+      0.78702,
+      1.08608
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;Missing sensor2 nodes: sensor2:xplus, sensor2:xminus, sensor2:yminus&quot;
+  ]
+}</pre></details>
+</body></html>

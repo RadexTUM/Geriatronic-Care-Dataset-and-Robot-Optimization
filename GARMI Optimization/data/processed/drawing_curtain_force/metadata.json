@@ -1,0 +1,63 @@
+{
+  "task_name": "drawing_curtain_force",
+  "trial_id": "drawing_curtain_force",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "person grasps curtain with one hand and draws it",
+  "original_trial_name": "vorhang3",
+  "split": "optimization",
+  "repeat_group": "drawing_curtain",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/drawing_curtain_force.csv",
+    "force_torque": "Basic Care/FT-sensor/drawing_curtain_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.526855076124567,
+    "end": 6.591452448096885,
+    "duration": 3.0645973719723183,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 413,
+    "end_frame": 771
+  },
+  "sensor_positions": {
+    "sensor1": "right hand",
+    "sensor2": null
+  },
+  "available_sensors": [
+    "sensor1"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": null
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 3.127091445331686,
+      "mean": 0.6624770490877706
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -0.49689,
+      -1.90729,
+      0.87143
+    ],
+    "max": [
+      0.64472,
+      -1.27179,
+      1.41494
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "Missing sensor2 nodes: sensor2:xplus, sensor2:xminus, sensor2:yminus"
+  ]
+}

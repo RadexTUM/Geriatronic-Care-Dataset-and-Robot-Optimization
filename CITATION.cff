@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use the dataset or the software, please cite the accompanying paper."
+title: "Geriatronics Interaction Dataset and task-based optimization of the humanoid robot GARMI"
+version: 1.0.0
+type: software
+license: MIT
+repository-code: "https://github.com/RadexTUM/Geriatronic-Care-Dataset-and-Robot-Optimization"
+authors:
+  - family-names: Radecker
+    given-names: Philipp
+    email: philipp.radecker@tum.de
+    affiliation: "Chair of Applied Mechanics, Munich Institute of Robotics and Machine Intelligence (MIRMI), Technical University of Munich"
+  - family-names: Nertinger
+    given-names: Simone
+    email: simone.nertinger@tum.de
+    affiliation: "Chair of Robotics and Systems Intelligence, Munich Institute of Robotics and Machine Intelligence (MIRMI), Technical University of Munich"
+  - family-names: König
+    given-names: Alexander
+keywords:
+  - assistive robotics
+  - elderly care
+  - geriatric rehabilitation
+  - motion capture
+  - force-torque sensing
+  - humanoid robots
+  - kinematic design optimization
+preferred-citation:
+  type: conference-paper
+  title: "A Multimodal Dataset for Assistive Robotics in Elderly Care: A Case Study on Task-Based Kinematic Optimization of Humanoid Robots"
+  authors:
+    - family-names: Nertinger
+      given-names: Simone
+    - family-names: Radecker
+      given-names: Philipp
+    - family-names: König
+      given-names: Alexander
+    - family-names: Rixen
+      given-names: Daniel J.
+    - family-names: Bengler
+      given-names: Klaus
+  collection-title: "2026 IEEE-RAS International Conference on Humanoid Robots (Humanoids)"
+  conference:
+    name: "IEEE-RAS International Conference on Humanoid Robots (Humanoids 2026)"
+  year: 2026

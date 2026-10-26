@@ -1,0 +1,71 @@
+<html><head><meta charset='utf-8'><title>combing_hair_AAN_force</title></head>
+<body><h2>combing_hair_AAN_force</h2>
+<p>therapist only assists if required</p>
+<p>category: Basic Care | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.897, 0.474, 0.29]</td><td>0.0</td></tr><tr><td>right</td><td>[0.981, 0.372, 0.437]</td><td>11.3</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;combing_hair_AAN_force&quot;,
+  &quot;trial_id&quot;: &quot;combing_hair_AAN_force&quot;,
+  &quot;category&quot;: &quot;basic_care&quot;,
+  &quot;category_name&quot;: &quot;Basic Care&quot;,
+  &quot;description&quot;: &quot;therapist only assists if required&quot;,
+  &quot;original_trial_name&quot;: &quot;hairassist1&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;combing_hair_AAN_force&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Basic Care/MoCap/combing_hair_AAN_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Basic Care/FT-sensor/combing_hair_AAN_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 2.405663361036469,
+    &quot;end&quot;: 41.66743054952016,
+    &quot;duration&quot;: 39.261767188483695,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 288,
+    &quot;end_frame&quot;: 4972
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;patient right arm&quot;,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 11.373587266915962,
+      &quot;mean&quot;: 3.438046855843701
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -1.86509,
+      0.38631,
+      0.82842
+    ],
+    &quot;max&quot;: [
+      -0.57834,
+      1.04396,
+      1.34713
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;Missing sensor2 nodes: sensor2:xplus, sensor2:xminus, sensor2:yminus&quot;,
+    &quot;sensor1: inferred right end-effector by wrist proximity (left=0.561 m, right=0.140 m)&quot;
+  ]
+}</pre></details>
+</body></html>

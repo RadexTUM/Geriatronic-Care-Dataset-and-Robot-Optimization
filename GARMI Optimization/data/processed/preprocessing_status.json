@@ -1,0 +1,435 @@
+{
+  "created": "preprocessing_20261026_010016",
+  "trials": [
+    {
+      "trial_id": "drawing_curtain_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "drawing_curtain_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "preparing_blanket_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "preparing_blanket_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "opening_drawer_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "folding_t_shirt_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "combing_hair_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "combing_hair_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "combing_hair_AAN_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "putting_on_jacket_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "administering_medication_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "administering_medication_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "washing_upper_body_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "washing_upper_body_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "changing_underpad_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "changing_underpad_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "washing_lower_body_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "washing_lower_body_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "slicing_bread_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "slicing_bread_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "spreading_butter_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "spreading_butter_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mopping_floor_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mopping_floor_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "carrying_tray_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "setting_table_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "setting_table_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "portioning_yoghurt_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "portioning_yoghurt_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "cutting_bun_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "cutting_bun_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "pouring_tea_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "wiping_table_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "wiping_table_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "folding_newspaper_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "folding_newspaper_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "refilling_tea_front_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "refilling_tea_side_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "clearing_floor_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "moving_chair_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "walking_AAN_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "standing_up_AAN_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "standing_up_AAN_force_2",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "standing_up_AAN_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "turning_to_side_passive_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "turning_to_side_AAN_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "transfer_to_bed_edge_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_abduction_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_abduction_janda_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_abduction_janda_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_abduction_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "elbow_extension_janda_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "elbow_extension_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "elbow_flexion_janda_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_extension_janda_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_extension_janda_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_extension_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_extension_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_flexion_janda_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_flexion_janda_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_internal_rotation_janda_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_internal_rotation_janda_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "elbow_rotation_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_external_rotation_janda_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_external_rotation_janda_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_rotation_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "shoulder_rotation_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "reaching_overhead_exercise_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "wiping_table_exercise_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "wiping_table_exercise_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "opening_window_exercise_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "opening_window_exercise_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "combing_hair_exercise_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "combing_hair_exercise_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "tucking_shirt_exercise_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "tucking_shirt_exercise_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mobi_wrist_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mobi_elbow_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mobi_shoulder_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mobi_ankle_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mobi_knee_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mobi_hip_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "cardiovascular_activation_kin",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mobi_leg_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mobi_leg_shank_force",
+      "status": "processed",
+      "error": null
+    },
+    {
+      "trial_id": "mobi_hip_rotation_force",
+      "status": "processed",
+      "error": null
+    }
+  ]
+}

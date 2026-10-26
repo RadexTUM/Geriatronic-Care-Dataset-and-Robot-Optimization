@@ -1,0 +1,67 @@
+{
+  "task_name": "washing_lower_body_kin",
+  "trial_id": "washing_lower_body_kin",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "therapists washes patients lower part - left leg of patient",
+  "original_trial_name": "washlow2",
+  "split": "optimization",
+  "repeat_group": "washing_lower_body",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/washing_lower_body_kin.csv",
+    "force_torque": "Basic Care/FT-sensor/washing_lower_body_kin_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.2952043584791793,
+    "end": 32.717270755180046,
+    "duration": 29.422066396700867,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 394,
+    "end_frame": 3903
+  },
+  "sensor_positions": {
+    "sensor1": "left hand therapist - patient left leg",
+    "sensor2": "right hand therapist - cloth"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "left",
+    "sensor2": "right"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 46.12796915462273,
+      "mean": 9.345992462571964
+    },
+    "sensor2": {
+      "max": 6.501432963867656,
+      "mean": 2.1955014920796345
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -1.03158,
+      -0.71577,
+      0.88747
+    ],
+    "max": [
+      -0.3432,
+      0.83043,
+      1.18602
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "task_name": "standing_up_AAN_force_2",
+  "trial_id": "standing_up_AAN_force_2",
+  "category": "transfer",
+  "category_name": "Transfer",
+  "description": "exercise: support for standing up three times from the front",
+  "original_trial_name": "aufstehen_k_3",
+  "split": "heldout",
+  "repeat_group": "standing_up_AAN",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Transfer/MoCap/standing_up_AAN_force_2.csv",
+    "force_torque": "Transfer/FT-sensor/standing_up_AAN_force_2_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 5.194307505137463,
+    "end": 26.52626939516801,
+    "duration": 21.33196189003055,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 619,
+    "end_frame": 3157
+  },
+  "sensor_positions": {
+    "sensor1": "right wrist",
+    "sensor2": "left wrist"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 21.263029095344425,
+      "mean": 8.420710544572058
+    },
+    "sensor2": {
+      "max": 19.34716849824007,
+      "mean": 8.60183871827929
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      0.28859,
+      0.00591,
+      0.78161
+    ],
+    "max": [
+      0.86366,
+      0.60416,
+      1.20357
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame."
+  ]
+}

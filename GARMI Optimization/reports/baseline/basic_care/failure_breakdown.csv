@@ -1,0 +1,4 @@
+failure,task_count,task_fraction
+max_position_error,6,0.5454545454545454
+ok,4,0.36363636363636365
+max_orientation_error,1,0.09090909090909091

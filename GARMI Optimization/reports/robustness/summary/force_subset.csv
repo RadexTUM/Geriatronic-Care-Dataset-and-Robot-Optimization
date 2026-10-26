@@ -1,0 +1,7 @@
+subset,configuration,n_trials,coverage
+all,baseline,55,0.6181818181818182
+all,recommended,55,0.7818181818181819
+force_equipped,baseline,34,0.6176470588235294
+force_equipped,recommended,34,0.8235294117647058
+kinematics_only,baseline,21,0.6190476190476191
+kinematics_only,recommended,21,0.7142857142857143

@@ -1,0 +1,68 @@
+{
+  "task_name": "shoulder_rotation_force",
+  "trial_id": "shoulder_rotation_force",
+  "category": "rom",
+  "category_name": "ROM",
+  "description": "passive ROM assessment shoulder internal/external rotation with shoulder in 90\u00b0 abduction three times",
+  "original_trial_name": "rot_k_1",
+  "split": "optimization",
+  "repeat_group": "shoulder_rotation",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "ROM/MoCap/shoulder_rotation_force.csv",
+    "force_torque": "ROM/FT-sensor/shoulder_rotation_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 6.892974512676055,
+    "end": 24.646586916056336,
+    "duration": 17.75361240338028,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 821,
+    "end_frame": 2933
+  },
+  "sensor_positions": {
+    "sensor1": "left acromion",
+    "sensor2": "left wrist"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "left",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 29.735644170748806,
+      "mean": 12.782702864449373
+    },
+    "sensor2": {
+      "max": 24.153093072874373,
+      "mean": 9.624159570111821
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -0.02067,
+      -0.71281,
+      0.67992
+    ],
+    "max": [
+      0.46498,
+      -0.26903,
+      1.30692
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred left end-effector by wrist proximity (left=0.132 m, right=0.555 m)"
+  ]
+}

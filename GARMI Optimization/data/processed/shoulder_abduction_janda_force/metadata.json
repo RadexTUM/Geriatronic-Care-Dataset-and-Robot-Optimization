@@ -1,0 +1,68 @@
+{
+  "task_name": "shoulder_abduction_janda_force",
+  "trial_id": "shoulder_abduction_janda_force",
+  "category": "rom",
+  "category_name": "ROM",
+  "description": "muscle function test Janda shoulder abduction",
+  "original_trial_name": "abd_janda_k_1",
+  "split": "optimization",
+  "repeat_group": "shoulder_abduction_janda",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "ROM/MoCap/shoulder_abduction_janda_force.csv",
+    "force_torque": "ROM/FT-sensor/shoulder_abduction_janda_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 8.566421992122535,
+    "end": 13.018595946608313,
+    "duration": 4.452173954485778,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 1015,
+    "end_frame": 1542
+  },
+  "sensor_positions": {
+    "sensor1": "left acromion",
+    "sensor2": "left wrist"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 25.981917143840995,
+      "mean": 4.0707718914094
+    },
+    "sensor2": {
+      "max": 59.070480336675736,
+      "mean": 8.989361154959223
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      0.16703,
+      -0.5857,
+      0.64298
+    ],
+    "max": [
+      0.42327,
+      -0.53809,
+      1.29106
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred right end-effector by wrist proximity (left=0.589 m, right=0.112 m)"
+  ]
+}

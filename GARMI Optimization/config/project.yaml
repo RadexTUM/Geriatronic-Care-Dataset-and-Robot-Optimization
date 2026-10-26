@@ -1,0 +1,16 @@
+# Dataset location and preprocessing settings (paper Sec. IV-B).
+dataset:
+  # Folder of the Geriatronics Interaction Dataset, relative to the
+  # "GARMI Optimization" folder or absolute. The environment variable
+  # GARMI_OPT_DATASET_DIR takes precedence.
+  root: ../Geriatronics Interaction Dataset
+preprocessing:
+  vicon_default_rate_hz: 120        # used if a MoCap file does not state its rate
+  ft_default_rate_hz: 240           # used if an FT file does not state its rate
+  lowpass_cutoff_hz: 15.0           # zero-phase Butterworth low-pass (MoCap and FT)
+  filter_order: 4
+  default_number_of_task_points: 50 # waypoints per trial within the contact window
+  # Fallback contact detection if a trial has no annotated frame window:
+  assumed_hand_length_m: 0.2
+  force_threshold_n: 1.0
+  fallback_force_quantile: 0.75

@@ -1,0 +1,75 @@
+<html><head><meta charset='utf-8'><title>combing_hair_exercise_force</title></head>
+<body><h2>combing_hair_exercise_force</h2>
+<p>exercise: passive mobilisation for ADL combing hair three times</p>
+<p>category: Geriatric Rehabilitation | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.491, 0.466, 0.899]</td><td>38.2</td></tr><tr><td>right</td><td>[0.182, 0.361, 0.407]</td><td>27.8</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;combing_hair_exercise_force&quot;,
+  &quot;trial_id&quot;: &quot;combing_hair_exercise_force&quot;,
+  &quot;category&quot;: &quot;geriatric_rehabilitation&quot;,
+  &quot;category_name&quot;: &quot;Geriatric Rehabilitation&quot;,
+  &quot;description&quot;: &quot;exercise: passive mobilisation for ADL combing hair three times&quot;,
+  &quot;original_trial_name&quot;: &quot;haare_passiv_k_1&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;combing_hair_exercise_force&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Geriatric Rehabilitation/MoCap/combing_hair_exercise_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Geriatric Rehabilitation/FT-sensor/combing_hair_exercise_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 5.419850865366166,
+    &quot;end&quot;: 23.471993887432046,
+    &quot;duration&quot;: 18.05214302206588,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 645,
+    &quot;end_frame&quot;: 2790
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;left upperarm&quot;,
+    &quot;sensor2&quot;: &quot;left wrist&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: &quot;left&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 28.525289423551513,
+      &quot;mean&quot;: 8.334801741678913
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 38.79647366692162,
+      &quot;mean&quot;: 13.133080310136389
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      0.09835,
+      -0.56154,
+      0.66002
+    ],
+    &quot;max&quot;: [
+      0.58954,
+      0.05189,
+      1.55937
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;sensor1: inferred right end-effector by wrist proximity (left=0.333 m, right=0.130 m)&quot;
+  ]
+}</pre></details>
+</body></html>

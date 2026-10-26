@@ -1,0 +1,56 @@
+{
+  "task_name": "shoulder_extension_kin",
+  "trial_id": "shoulder_extension_kin",
+  "category": "rom",
+  "category_name": "ROM",
+  "description": "passive ROM assessment shoulder extension/flexion three times",
+  "original_trial_name": "ex_o_1",
+  "split": "heldout",
+  "repeat_group": "shoulder_extension",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "ROM/MoCap/shoulder_extension_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 4.416666666666667,
+    "end": 33.041666666666664,
+    "duration": 28.624999999999996,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 531,
+    "end_frame": 3966
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      0.09399,
+      -0.96614,
+      0.69046
+    ],
+    "max": [
+      0.45701,
+      -0.05741,
+      1.61757
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

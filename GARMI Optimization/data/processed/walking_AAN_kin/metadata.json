@@ -1,0 +1,56 @@
+{
+  "task_name": "walking_AAN_kin",
+  "trial_id": "walking_AAN_kin",
+  "category": "transfer",
+  "category_name": "Transfer",
+  "description": "therapist supports patient walking",
+  "original_trial_name": "walkassist3",
+  "split": "optimization",
+  "repeat_group": "walking_AAN_kin",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Transfer/MoCap/walking_AAN_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 7.716666666666667,
+    "end": 29.166666666666668,
+    "duration": 21.450000000000003,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 927,
+    "end_frame": 3501
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -1.50073,
+      -0.43563,
+      0.98976
+    ],
+    "max": [
+      -0.57271,
+      0.7181,
+      1.0548
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

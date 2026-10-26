@@ -1,0 +1,56 @@
+{
+  "task_name": "shoulder_internal_rotation_janda_kin",
+  "trial_id": "shoulder_internal_rotation_janda_kin",
+  "category": "rom",
+  "category_name": "ROM",
+  "description": "muscle function test Janda shoulder internal rotation",
+  "original_trial_name": "innrot_janda_o_5",
+  "split": "optimization",
+  "repeat_group": "shoulder_internal_rotation_janda_kin",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "ROM/MoCap/shoulder_internal_rotation_janda_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 5.558333333333334,
+    "end": 9.033333333333333,
+    "duration": 3.4749999999999996,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 668,
+    "end_frame": 1085
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      0.27833,
+      -0.60008,
+      0.89791
+    ],
+    "max": [
+      0.33009,
+      -0.26041,
+      1.05158
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

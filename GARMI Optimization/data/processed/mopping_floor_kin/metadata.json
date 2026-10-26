@@ -1,0 +1,56 @@
+{
+  "task_name": "mopping_floor_kin",
+  "trial_id": "mopping_floor_kin",
+  "category": "meals",
+  "category_name": "Meals",
+  "description": "person mops the floor with holding the mop with both hands",
+  "original_trial_name": "mob1",
+  "split": "heldout",
+  "repeat_group": "mopping_floor",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Meals/MoCap/mopping_floor_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.85,
+    "end": 16.35,
+    "duration": 13.500000000000002,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 343,
+    "end_frame": 1963
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -0.63685,
+      -0.39754,
+      0.17316
+    ],
+    "max": [
+      0.58987,
+      0.87638,
+      1.11643
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

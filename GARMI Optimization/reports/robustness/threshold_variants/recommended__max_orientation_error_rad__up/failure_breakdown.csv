@@ -1,0 +1,5 @@
+failure,task_count,task_fraction
+ok,44,0.8
+max_position_error,9,0.16363636363636364
+inter_arm_collision,1,0.01818181818181818
+joint_speed_limit,1,0.01818181818181818

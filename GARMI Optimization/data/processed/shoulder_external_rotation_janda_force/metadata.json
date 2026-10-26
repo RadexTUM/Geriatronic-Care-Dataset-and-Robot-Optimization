@@ -1,0 +1,68 @@
+{
+  "task_name": "shoulder_external_rotation_janda_force",
+  "trial_id": "shoulder_external_rotation_janda_force",
+  "category": "rom",
+  "category_name": "ROM",
+  "description": "muscle function test Janda shoulder external rotation",
+  "original_trial_name": "rot_janda_k_1",
+  "split": "optimization",
+  "repeat_group": "shoulder_external_rotation_janda",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "ROM/MoCap/shoulder_external_rotation_janda_force.csv",
+    "force_torque": "ROM/FT-sensor/shoulder_external_rotation_janda_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 6.796619974975465,
+    "end": 11.866576842983317,
+    "duration": 5.069956868007852,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 804,
+    "end_frame": 1403
+  },
+  "sensor_positions": {
+    "sensor1": "left acromion",
+    "sensor2": "left wrist"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 13.238359262376548,
+      "mean": 4.175130847496576
+    },
+    "sensor2": {
+      "max": 72.89553451338084,
+      "mean": 11.4064117018431
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      0.12003,
+      -0.60659,
+      0.67739
+    ],
+    "max": [
+      0.39178,
+      -0.36374,
+      1.27164
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred right end-effector by wrist proximity (left=0.405 m, right=0.126 m)"
+  ]
+}

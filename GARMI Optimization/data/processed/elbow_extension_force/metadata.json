@@ -1,0 +1,68 @@
+{
+  "task_name": "elbow_extension_force",
+  "trial_id": "elbow_extension_force",
+  "category": "rom",
+  "category_name": "ROM",
+  "description": "passive ROM assessment elbow flexion three times",
+  "original_trial_name": "elbow_ex_k_1",
+  "split": "optimization",
+  "repeat_group": "elbow_extension_force",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "ROM/MoCap/elbow_extension_force.csv",
+    "force_torque": "ROM/FT-sensor/elbow_extension_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 5.291950224954792,
+    "end": 19.72683993092224,
+    "duration": 14.434889705967446,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 629,
+    "end_frame": 2342
+  },
+  "sensor_positions": {
+    "sensor1": "left upperarm",
+    "sensor2": "left wrist"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 18.62355502653178,
+      "mean": 4.704222883212157
+    },
+    "sensor2": {
+      "max": 29.544047581694514,
+      "mean": 10.008781536764808
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      0.07697,
+      -0.5253,
+      0.65278
+    ],
+    "max": [
+      0.27766,
+      -0.11335,
+      1.01977
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred right end-effector by wrist proximity (left=0.312 m, right=0.140 m)"
+  ]
+}

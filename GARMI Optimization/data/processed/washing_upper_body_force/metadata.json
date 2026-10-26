@@ -1,0 +1,68 @@
+{
+  "task_name": "washing_upper_body_force",
+  "trial_id": "washing_upper_body_force",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "therapist washes patient's upper body",
+  "original_trial_name": "washup3",
+  "split": "optimization",
+  "repeat_group": "washing_upper_body",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/washing_upper_body_force.csv",
+    "force_torque": "Basic Care/FT-sensor/washing_upper_body_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.0693632242392805,
+    "end": 44.386584461618256,
+    "duration": 42.31722123737897,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 248,
+    "end_frame": 5299
+  },
+  "sensor_positions": {
+    "sensor1": "patient left arm",
+    "sensor2": "right hand"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "left",
+    "sensor2": "right"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 12.559827248594537,
+      "mean": 2.8443578727112007
+    },
+    "sensor2": {
+      "max": 10.906794517162313,
+      "mean": 2.877302197431905
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -1.20718,
+      0.10209,
+      0.88607
+    ],
+    "max": [
+      -0.47068,
+      0.92244,
+      1.3004
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred left end-effector by wrist proximity (left=0.237 m, right=0.364 m)"
+  ]
+}

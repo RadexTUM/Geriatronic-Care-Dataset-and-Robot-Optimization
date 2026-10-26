@@ -1,0 +1,75 @@
+<html><head><meta charset='utf-8'><title>slicing_bread_force</title></head>
+<body><h2>slicing_bread_force</h2>
+<p>person takes knife and cuts slice of bread</p>
+<p>category: Meals | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.214, 0.598, 0.086]</td><td>44.0</td></tr><tr><td>right</td><td>[0.563, 0.189, 0.257]</td><td>26.7</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;slicing_bread_force&quot;,
+  &quot;trial_id&quot;: &quot;slicing_bread_force&quot;,
+  &quot;category&quot;: &quot;meals&quot;,
+  &quot;category_name&quot;: &quot;Meals&quot;,
+  &quot;description&quot;: &quot;person takes knife and cuts slice of bread&quot;,
+  &quot;original_trial_name&quot;: &quot;bread4&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;slicing_bread&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Meals/MoCap/slicing_bread_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Meals/FT-sensor/slicing_bread_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 2.945181892886345,
+    &quot;end&quot;: 17.89050318887981,
+    &quot;duration&quot;: 14.945321295993462,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 350,
+    &quot;end_frame&quot;: 2121
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;right hand&quot;,
+    &quot;sensor2&quot;: &quot;bread&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: &quot;left&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 34.79157217053344,
+      &quot;mean&quot;: 5.832618317036919
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 47.72350571666162,
+      &quot;mean&quot;: 16.419203351092378
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -0.94011,
+      0.17457,
+      0.81941
+    ],
+    &quot;max&quot;: [
+      -0.19624,
+      0.77235,
+      1.07646
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;sensor2: inferred left end-effector by wrist proximity (left=0.163 m, right=0.285 m)&quot;
+  ]
+}</pre></details>
+</body></html>

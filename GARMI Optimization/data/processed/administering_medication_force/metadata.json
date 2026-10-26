@@ -1,0 +1,68 @@
+{
+  "task_name": "administering_medication_force",
+  "trial_id": "administering_medication_force",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "therapist gives medication to patient on spoon",
+  "original_trial_name": "medication4",
+  "split": "optimization",
+  "repeat_group": "administering_medication",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/administering_medication_force.csv",
+    "force_torque": "Basic Care/FT-sensor/administering_medication_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.4725801192582026,
+    "end": 25.897207669044224,
+    "duration": 22.42462754978602,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 414,
+    "end_frame": 3081
+  },
+  "sensor_positions": {
+    "sensor1": "right hand",
+    "sensor2": null
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "right"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 7.924225585994721,
+      "mean": 2.4396007849314243
+    },
+    "sensor2": {
+      "max": 3.635575984690459,
+      "mean": 0.6445408337196025
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -1.35289,
+      -0.01292,
+      0.83504
+    ],
+    "max": [
+      -0.81695,
+      0.66296,
+      1.41381
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor2: inferred right end-effector by wrist proximity (left=0.709 m, right=0.375 m)"
+  ]
+}

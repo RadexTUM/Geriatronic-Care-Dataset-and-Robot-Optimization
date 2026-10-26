@@ -1,0 +1,74 @@
+<html><head><meta charset='utf-8'><title>preparing_blanket_force</title></head>
+<body><h2>preparing_blanket_force</h2>
+<p>person lifts blanket in bed</p>
+<p>category: Basic Care | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.586, 0.192, 0.59]</td><td>9.0</td></tr><tr><td>right</td><td>[0.582, 0.178, 0.669]</td><td>11.7</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;preparing_blanket_force&quot;,
+  &quot;trial_id&quot;: &quot;preparing_blanket_force&quot;,
+  &quot;category&quot;: &quot;basic_care&quot;,
+  &quot;category_name&quot;: &quot;Basic Care&quot;,
+  &quot;description&quot;: &quot;person lifts blanket in bed&quot;,
+  &quot;original_trial_name&quot;: &quot;blanket3&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;preparing_blanket&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Basic Care/MoCap/preparing_blanket_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Basic Care/FT-sensor/preparing_blanket_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 3.464175915789473,
+    &quot;end&quot;: 10.197243320743032,
+    &quot;duration&quot;: 6.733067404953559,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 409,
+    &quot;end_frame&quot;: 1202
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;right hand&quot;,
+    &quot;sensor2&quot;: &quot;left hand&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: &quot;left&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 11.755116575931659,
+      &quot;mean&quot;: 1.5085221483060036
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 9.061817090133973,
+      &quot;mean&quot;: 1.0754047116249799
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -1.04874,
+      -0.35269,
+      0.95213
+    ],
+    &quot;max&quot;: [
+      -0.44153,
+      0.7251,
+      1.62955
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;
+  ]
+}</pre></details>
+</body></html>

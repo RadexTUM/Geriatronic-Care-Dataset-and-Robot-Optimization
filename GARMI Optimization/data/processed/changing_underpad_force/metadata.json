@@ -1,0 +1,67 @@
+{
+  "task_name": "changing_underpad_force",
+  "trial_id": "changing_underpad_force",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "therapist moves patient to the side to change underpad",
+  "original_trial_name": "underpad3",
+  "split": "optimization",
+  "repeat_group": "changing_underpad",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/changing_underpad_force.csv",
+    "force_torque": "Basic Care/FT-sensor/changing_underpad_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 6.040176928907475,
+    "end": 28.512323361212758,
+    "duration": 22.472146432305284,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 720,
+    "end_frame": 3395
+  },
+  "sensor_positions": {
+    "sensor1": "left hand therapist - patient left leg",
+    "sensor2": "right hand therapist - left arm patient"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "left",
+    "sensor2": "right"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 47.047462762933804,
+      "mean": 6.45654470989048
+    },
+    "sensor2": {
+      "max": 25.727079106075468,
+      "mean": 4.566320175340612
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -1.23743,
+      -0.34319,
+      0.90367
+    ],
+    "max": [
+      -0.54106,
+      0.99493,
+      1.2448
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame."
+  ]
+}

@@ -1,0 +1,70 @@
+<html><head><meta charset='utf-8'><title>opening_drawer_force</title></head>
+<body><h2>opening_drawer_force</h2>
+<p>persons opens drawer of nightstand</p>
+<p>category: Basic Care | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.054, 0.065, 0.025]</td><td>0.0</td></tr><tr><td>right</td><td>[0.229, 0.009, 0.042]</td><td>7.9</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;opening_drawer_force&quot;,
+  &quot;trial_id&quot;: &quot;opening_drawer_force&quot;,
+  &quot;category&quot;: &quot;basic_care&quot;,
+  &quot;category_name&quot;: &quot;Basic Care&quot;,
+  &quot;description&quot;: &quot;persons opens drawer of nightstand&quot;,
+  &quot;original_trial_name&quot;: &quot;open1&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;opening_drawer_force&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Basic Care/MoCap/opening_drawer_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Basic Care/FT-sensor/opening_drawer_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 3.150466476793249,
+    &quot;end&quot;: 5.279160042194093,
+    &quot;duration&quot;: 2.1286935654008436,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 371,
+    &quot;end_frame&quot;: 621
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;right hand&quot;,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 10.667687268707951,
+      &quot;mean&quot;: 1.7244858085811443
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -1.49141,
+      -0.7938,
+      0.70064
+    ],
+    &quot;max&quot;: [
+      -0.94513,
+      -0.33009,
+      0.96715
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;Missing sensor2 nodes: sensor2:xplus, sensor2:xminus, sensor2:yminus&quot;
+  ]
+}</pre></details>
+</body></html>

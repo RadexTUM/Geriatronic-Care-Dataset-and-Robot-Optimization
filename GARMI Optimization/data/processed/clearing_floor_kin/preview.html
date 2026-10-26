@@ -1,0 +1,63 @@
+<html><head><meta charset='utf-8'><title>clearing_floor_kin</title></head>
+<body><h2>clearing_floor_kin</h2>
+<p>person picks something up from floor and lifts chair</p>
+<p>category: Transfer | split: heldout |
+force measurement: False</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.823, 1.057, 0.203]</td><td>0.0</td></tr><tr><td>right</td><td>[0.65, 1.333, 0.927]</td><td>0.0</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;clearing_floor_kin&quot;,
+  &quot;trial_id&quot;: &quot;clearing_floor_kin&quot;,
+  &quot;category&quot;: &quot;transfer&quot;,
+  &quot;category_name&quot;: &quot;Transfer&quot;,
+  &quot;description&quot;: &quot;person picks something up from floor and lifts chair&quot;,
+  &quot;original_trial_name&quot;: &quot;chair2&quot;,
+  &quot;split&quot;: &quot;heldout&quot;,
+  &quot;repeat_group&quot;: &quot;moving_chair&quot;,
+  &quot;force_measurement&quot;: false,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Transfer/MoCap/clearing_floor_kin.csv&quot;,
+    &quot;force_torque&quot;: null
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: null,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 2.15,
+    &quot;end&quot;: 9.933333333333334,
+    &quot;duration&quot;: 7.783333333333333,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 259,
+    &quot;end_frame&quot;: 1193
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {},
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -0.72146,
+      -0.61456,
+      0.10941
+    ],
+    &quot;max&quot;: [
+      0.24529,
+      0.80655,
+      1.03627
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;kinematics-only trial: no force-torque recording; forces set to zero&quot;
+  ]
+}</pre></details>
+</body></html>

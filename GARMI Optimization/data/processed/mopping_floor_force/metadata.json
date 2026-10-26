@@ -1,0 +1,69 @@
+{
+  "task_name": "mopping_floor_force",
+  "trial_id": "mopping_floor_force",
+  "category": "meals",
+  "category_name": "Meals",
+  "description": "person mops the floor with holding the mop with both hands",
+  "original_trial_name": "mob3",
+  "split": "optimization",
+  "repeat_group": "mopping_floor",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Meals/MoCap/mopping_floor_force.csv",
+    "force_torque": "Meals/FT-sensor/mopping_floor_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.0590962046470063,
+    "end": 15.523645657283291,
+    "duration": 12.464549452636284,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 363,
+    "end_frame": 1838
+  },
+  "sensor_positions": {
+    "sensor1": "mop oben",
+    "sensor2": "mop unten"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 12.591052541340082,
+      "mean": 4.30002248744717
+    },
+    "sensor2": {
+      "max": 14.632687740559751,
+      "mean": 4.594005172707179
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -1.1962,
+      -0.43779,
+      0.26212
+    ],
+    "max": [
+      0.00162,
+      0.55018,
+      1.10998
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred right end-effector by wrist proximity (left=0.402 m, right=0.129 m)",
+    "sensor2: inferred left end-effector by wrist proximity (left=0.150 m, right=0.559 m)"
+  ]
+}

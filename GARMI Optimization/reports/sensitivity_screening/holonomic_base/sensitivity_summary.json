@@ -1,0 +1,19 @@
+{
+  "group_name": "all_tasks",
+  "baseline_profile": "garmi_strict_baseline",
+  "base_motion_mode": "free_holonomic",
+  "trajectories": 8,
+  "levels": 6,
+  "seed": 7,
+  "parameters": [
+    "left_x_m",
+    "left_y_m",
+    "left_z_m",
+    "left_delta_roll_rad",
+    "left_delta_pitch_rad",
+    "left_delta_yaw_rad"
+  ],
+  "evaluations": 56,
+  "elapsed_s": 50.49244733300293,
+  "interpretation": "mu_star ~ 0 for all mount parameters means the mount has no measurable influence under this base-motion mode; optimizing it in that regime is not meaningful."
+}

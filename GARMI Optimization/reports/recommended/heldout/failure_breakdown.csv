@@ -1,0 +1,5 @@
+failure,task_count,task_fraction
+ok,15,0.5769230769230769
+max_position_error,7,0.2692307692307692
+joint_speed_limit,2,0.07692307692307693
+max_orientation_error,2,0.07692307692307693

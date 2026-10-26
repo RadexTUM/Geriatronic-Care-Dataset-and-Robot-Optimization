@@ -1,0 +1,68 @@
+{
+  "task_name": "shoulder_extension_force",
+  "trial_id": "shoulder_extension_force",
+  "category": "rom",
+  "category_name": "ROM",
+  "description": "passive ROM assessment shoulder extension/flexion three times",
+  "original_trial_name": "ex_k_2",
+  "split": "optimization",
+  "repeat_group": "shoulder_extension",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "ROM/MoCap/shoulder_extension_force.csv",
+    "force_torque": "ROM/FT-sensor/shoulder_extension_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 7.278900207282914,
+    "end": 39.65658880212085,
+    "duration": 32.377688594837934,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 869,
+    "end_frame": 4730
+  },
+  "sensor_positions": {
+    "sensor1": "left acromion",
+    "sensor2": "left wrist"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 45.52385560388578,
+      "mean": 15.763275023040643
+    },
+    "sensor2": {
+      "max": 45.261054364400174,
+      "mean": 14.2667836738133
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -0.32204,
+      -1.05834,
+      0.27577
+    ],
+    "max": [
+      0.4244,
+      -0.00316,
+      1.6496
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred right end-effector by wrist proximity (left=0.548 m, right=0.123 m)"
+  ]
+}

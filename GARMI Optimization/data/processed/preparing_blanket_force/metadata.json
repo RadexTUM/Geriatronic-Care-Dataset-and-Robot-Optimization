@@ -1,0 +1,67 @@
+{
+  "task_name": "preparing_blanket_force",
+  "trial_id": "preparing_blanket_force",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "person lifts blanket in bed",
+  "original_trial_name": "blanket3",
+  "split": "optimization",
+  "repeat_group": "preparing_blanket",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/preparing_blanket_force.csv",
+    "force_torque": "Basic Care/FT-sensor/preparing_blanket_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.464175915789473,
+    "end": 10.197243320743032,
+    "duration": 6.733067404953559,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 409,
+    "end_frame": 1202
+  },
+  "sensor_positions": {
+    "sensor1": "right hand",
+    "sensor2": "left hand"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 11.755116575931659,
+      "mean": 1.5085221483060036
+    },
+    "sensor2": {
+      "max": 9.061817090133973,
+      "mean": 1.0754047116249799
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -1.04874,
+      -0.35269,
+      0.95213
+    ],
+    "max": [
+      -0.44153,
+      0.7251,
+      1.62955
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame."
+  ]
+}

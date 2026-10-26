@@ -1,0 +1,63 @@
+<html><head><meta charset='utf-8'><title>turning_to_side_passive_kin</title></head>
+<body><h2>turning_to_side_passive_kin</h2>
+<p>therapist turns the inactive patient to the side</p>
+<p>category: Transfer | split: optimization |
+force measurement: False</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.858, 0.555, 0.276]</td><td>0.0</td></tr><tr><td>right</td><td>[0.618, 0.848, 0.29]</td><td>0.0</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;turning_to_side_passive_kin&quot;,
+  &quot;trial_id&quot;: &quot;turning_to_side_passive_kin&quot;,
+  &quot;category&quot;: &quot;transfer&quot;,
+  &quot;category_name&quot;: &quot;Transfer&quot;,
+  &quot;description&quot;: &quot;therapist turns the inactive patient to the side&quot;,
+  &quot;original_trial_name&quot;: &quot;seitlich_inactive1&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;turning_to_side_passive_kin&quot;,
+  &quot;force_measurement&quot;: false,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Transfer/MoCap/turning_to_side_passive_kin.csv&quot;,
+    &quot;force_torque&quot;: null
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: null,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 2.5833333333333335,
+    &quot;end&quot;: 20.916666666666668,
+    &quot;duration&quot;: 18.333333333333336,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 311,
+    &quot;end_frame&quot;: 2511
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;available_sensors&quot;: [],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: null,
+    &quot;sensor2&quot;: null
+  },
+  &quot;force_summary_n&quot;: {},
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -1.4735,
+      0.00288,
+      0.90404
+    ],
+    &quot;max&quot;: [
+      -0.61549,
+      1.12843,
+      1.23974
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;kinematics-only trial: no force-torque recording; forces set to zero&quot;
+  ]
+}</pre></details>
+</body></html>

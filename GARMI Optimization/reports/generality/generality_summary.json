@@ -1,0 +1,21 @@
+{
+  "configs": {
+    "strict": "stage2_forces",
+    "global": "reports/optimization/general_free_height_stage2_seed07/best_config.yaml",
+    "global_z5cm": "reports/optimization/general_height_bound_seed07/best_config.yaml",
+    "basic_care": "reports/optimization/specialist_basic_care/best_config.yaml",
+    "meals": "reports/optimization/specialist_meals/best_config.yaml",
+    "transfer": "reports/optimization/specialist_transfer/best_config.yaml",
+    "rom": "reports/optimization/specialist_rom/best_config.yaml",
+    "geriatric_rehabilitation": "reports/optimization/specialist_geriatric_rehabilitation/best_config.yaml"
+  },
+  "groups": [
+    "basic_care",
+    "meals",
+    "transfer",
+    "rom",
+    "geriatric_rehabilitation"
+  ],
+  "elapsed_s": 1101.3607518749777,
+  "note": "price_<config> = best specialist coverage of the group minus the config's coverage on that group. The central artifact for the group-vs-global co-design decision."
+}

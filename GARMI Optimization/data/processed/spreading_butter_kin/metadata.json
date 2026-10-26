@@ -1,0 +1,56 @@
+{
+  "task_name": "spreading_butter_kin",
+  "trial_id": "spreading_butter_kin",
+  "category": "meals",
+  "category_name": "Meals",
+  "description": "person spreads butter with knife on bread",
+  "original_trial_name": "butter4",
+  "split": "heldout",
+  "repeat_group": "spreading_butter",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Meals/MoCap/spreading_butter_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.4583333333333335,
+    "end": 18.616666666666667,
+    "duration": 16.158333333333335,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 296,
+    "end_frame": 2235
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -0.91044,
+      0.13455,
+      0.81768
+    ],
+    "max": [
+      -0.12495,
+      0.8679,
+      1.13217
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

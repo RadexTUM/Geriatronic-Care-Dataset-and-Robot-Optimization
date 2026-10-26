@@ -1,0 +1,56 @@
+{
+  "task_name": "combing_hair_kin",
+  "trial_id": "combing_hair_kin",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "therapist combs patient's hair with comb",
+  "original_trial_name": "hair1",
+  "split": "heldout",
+  "repeat_group": "combing_hair",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/combing_hair_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.941666666666667,
+    "end": 27.091666666666665,
+    "duration": 23.15,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 474,
+    "end_frame": 3252
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -1.82105,
+      0.00359,
+      0.86171
+    ],
+    "max": [
+      -0.58153,
+      1.04113,
+      1.50866
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

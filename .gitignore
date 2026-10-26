@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+~$*
+
+# Generated at run time: runs, logs, variants, re-processed data
+GARMI Optimization/outputs/
+GARMI Optimization/resources/mujoco/generated/*
+!GARMI Optimization/resources/mujoco/generated/.gitkeep

@@ -1,0 +1,56 @@
+{
+  "task_name": "folding_newspaper_kin",
+  "trial_id": "folding_newspaper_kin",
+  "category": "meals",
+  "category_name": "Meals",
+  "description": "therapist folds newspaper and puts it away from the patients table",
+  "original_trial_name": "paper1",
+  "split": "optimization",
+  "repeat_group": "folding_newspaper",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Meals/MoCap/folding_newspaper_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 7.191666666666666,
+    "end": 14.883333333333333,
+    "duration": 7.691666666666666,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 864,
+    "end_frame": 1787
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -1.26943,
+      -0.46399,
+      0.79079
+    ],
+    "max": [
+      -0.31422,
+      0.03483,
+      1.10225
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

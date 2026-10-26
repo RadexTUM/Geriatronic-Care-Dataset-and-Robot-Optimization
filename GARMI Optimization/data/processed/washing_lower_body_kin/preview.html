@@ -1,0 +1,74 @@
+<html><head><meta charset='utf-8'><title>washing_lower_body_kin</title></head>
+<body><h2>washing_lower_body_kin</h2>
+<p>therapists washes patients lower part - left leg of patient</p>
+<p>category: Basic Care | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.594, 0.945, 0.299]</td><td>42.5</td></tr><tr><td>right</td><td>[0.472, 1.352, 0.236]</td><td>5.8</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;washing_lower_body_kin&quot;,
+  &quot;trial_id&quot;: &quot;washing_lower_body_kin&quot;,
+  &quot;category&quot;: &quot;basic_care&quot;,
+  &quot;category_name&quot;: &quot;Basic Care&quot;,
+  &quot;description&quot;: &quot;therapists washes patients lower part - left leg of patient&quot;,
+  &quot;original_trial_name&quot;: &quot;washlow2&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;washing_lower_body&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Basic Care/MoCap/washing_lower_body_kin.csv&quot;,
+    &quot;force_torque&quot;: &quot;Basic Care/FT-sensor/washing_lower_body_kin_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 3.2952043584791793,
+    &quot;end&quot;: 32.717270755180046,
+    &quot;duration&quot;: 29.422066396700867,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 394,
+    &quot;end_frame&quot;: 3903
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;left hand therapist - patient left leg&quot;,
+    &quot;sensor2&quot;: &quot;right hand therapist - cloth&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;left&quot;,
+    &quot;sensor2&quot;: &quot;right&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 46.12796915462273,
+      &quot;mean&quot;: 9.345992462571964
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 6.501432963867656,
+      &quot;mean&quot;: 2.1955014920796345
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -1.03158,
+      -0.71577,
+      0.88747
+    ],
+    &quot;max&quot;: [
+      -0.3432,
+      0.83043,
+      1.18602
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;
+  ]
+}</pre></details>
+</body></html>

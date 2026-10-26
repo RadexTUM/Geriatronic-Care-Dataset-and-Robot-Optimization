@@ -1,0 +1,56 @@
+{
+  "task_name": "combing_hair_exercise_kin",
+  "trial_id": "combing_hair_exercise_kin",
+  "category": "geriatric_rehabilitation",
+  "category_name": "Geriatric Rehabilitation",
+  "description": "exercise: passive mobilisation for ADL combing hair three times",
+  "original_trial_name": "haare_o_passiv_3",
+  "split": "optimization",
+  "repeat_group": "combing_hair_exercise_kin",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Geriatric Rehabilitation/MoCap/combing_hair_exercise_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 4.866666666666666,
+    "end": 25.133333333333333,
+    "duration": 20.266666666666666,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 585,
+    "end_frame": 3017
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      0.08063,
+      -0.6693,
+      0.68772
+    ],
+    "max": [
+      0.51845,
+      -0.00221,
+      1.59516
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

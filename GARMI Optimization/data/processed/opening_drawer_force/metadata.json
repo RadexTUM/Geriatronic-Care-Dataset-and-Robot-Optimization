@@ -1,0 +1,63 @@
+{
+  "task_name": "opening_drawer_force",
+  "trial_id": "opening_drawer_force",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "persons opens drawer of nightstand",
+  "original_trial_name": "open1",
+  "split": "optimization",
+  "repeat_group": "opening_drawer_force",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/opening_drawer_force.csv",
+    "force_torque": "Basic Care/FT-sensor/opening_drawer_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 3.150466476793249,
+    "end": 5.279160042194093,
+    "duration": 2.1286935654008436,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 371,
+    "end_frame": 621
+  },
+  "sensor_positions": {
+    "sensor1": "right hand",
+    "sensor2": null
+  },
+  "available_sensors": [
+    "sensor1"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": null
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 10.667687268707951,
+      "mean": 1.7244858085811443
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -1.49141,
+      -0.7938,
+      0.70064
+    ],
+    "max": [
+      -0.94513,
+      -0.33009,
+      0.96715
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "Missing sensor2 nodes: sensor2:xplus, sensor2:xminus, sensor2:yminus"
+  ]
+}

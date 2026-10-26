@@ -1,0 +1,75 @@
+<html><head><meta charset='utf-8'><title>tucking_shirt_exercise_force</title></head>
+<body><h2>tucking_shirt_exercise_force</h2>
+<p>exercise: passive mobilisation for ADL tuck shirt in trousers three times</p>
+<p>category: Geriatric Rehabilitation | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.129, 0.251, 0.278]</td><td>37.1</td></tr><tr><td>right</td><td>[0.579, 0.506, 0.356]</td><td>0.0</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;tucking_shirt_exercise_force&quot;,
+  &quot;trial_id&quot;: &quot;tucking_shirt_exercise_force&quot;,
+  &quot;category&quot;: &quot;geriatric_rehabilitation&quot;,
+  &quot;category_name&quot;: &quot;Geriatric Rehabilitation&quot;,
+  &quot;description&quot;: &quot;exercise: passive mobilisation for ADL tuck shirt in trousers three times&quot;,
+  &quot;original_trial_name&quot;: &quot;hemd_k_1&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;tucking_shirt_exercise&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Geriatric Rehabilitation/MoCap/tucking_shirt_exercise_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Geriatric Rehabilitation/FT-sensor/tucking_shirt_exercise_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 3.5202681546356485,
+    &quot;end&quot;: 21.93009156619911,
+    &quot;duration&quot;: 18.409823411563462,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 419,
+    &quot;end_frame&quot;: 2605
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;left upperarm&quot;,
+    &quot;sensor2&quot;: &quot;left wrist&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;left&quot;,
+    &quot;sensor2&quot;: &quot;left&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 27.38763324356156,
+      &quot;mean&quot;: 10.220860689014053
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 38.08912741227401,
+      &quot;mean&quot;: 14.403492463368782
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -0.0049,
+      -0.88638,
+      0.62505
+    ],
+    &quot;max&quot;: [
+      0.57405,
+      -0.35197,
+      1.27885
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;sensor1: inferred left end-effector by wrist proximity (left=0.137 m, right=0.353 m)&quot;
+  ]
+}</pre></details>
+</body></html>

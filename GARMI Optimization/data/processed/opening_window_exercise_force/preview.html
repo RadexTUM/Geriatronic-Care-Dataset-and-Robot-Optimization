@@ -1,0 +1,75 @@
+<html><head><meta charset='utf-8'><title>opening_window_exercise_force</title></head>
+<body><h2>opening_window_exercise_force</h2>
+<p>exercise: passive mobilisation for ADL cleaning window three times with interaction forces</p>
+<p>category: Geriatric Rehabilitation | split: optimization |
+force measurement: True</p>
+<table border='1' cellpadding='4'><tr><th>side</th><th>range xyz [m]</th><th>max |F| [N]</th></tr><tr><td>left</td><td>[0.479, 0.477, 0.844]</td><td>29.0</td></tr><tr><td>right</td><td>[0.117, 0.372, 0.273]</td><td>23.4</td></tr></table>
+<details><summary>metadata</summary><pre>{
+  &quot;task_name&quot;: &quot;opening_window_exercise_force&quot;,
+  &quot;trial_id&quot;: &quot;opening_window_exercise_force&quot;,
+  &quot;category&quot;: &quot;geriatric_rehabilitation&quot;,
+  &quot;category_name&quot;: &quot;Geriatric Rehabilitation&quot;,
+  &quot;description&quot;: &quot;exercise: passive mobilisation for ADL cleaning window three times with interaction forces&quot;,
+  &quot;original_trial_name&quot;: &quot;fenster_k_1&quot;,
+  &quot;split&quot;: &quot;optimization&quot;,
+  &quot;repeat_group&quot;: &quot;opening_window_exercise&quot;,
+  &quot;force_measurement&quot;: true,
+  &quot;source_files&quot;: {
+    &quot;mocap&quot;: &quot;Geriatric Rehabilitation/MoCap/opening_window_exercise_force.csv&quot;,
+    &quot;force_torque&quot;: &quot;Geriatric Rehabilitation/FT-sensor/opening_window_exercise_force_ft.csv&quot;
+  },
+  &quot;node_rate_hz&quot;: 120,
+  &quot;ft_rate_hz&quot;: 240,
+  &quot;n_task_points&quot;: 50,
+  &quot;time_window_s&quot;: {
+    &quot;start&quot;: 5.312191004464286,
+    &quot;end&quot;: 27.149330608258932,
+    &quot;duration&quot;: 21.837139603794647,
+    &quot;source&quot;: &quot;metadata_frames&quot;
+  },
+  &quot;metadata_frames&quot;: {
+    &quot;start_frame&quot;: 633,
+    &quot;end_frame&quot;: 3231
+  },
+  &quot;sensor_positions&quot;: {
+    &quot;sensor1&quot;: &quot;left upperarm&quot;,
+    &quot;sensor2&quot;: &quot;left wrist&quot;
+  },
+  &quot;available_sensors&quot;: [
+    &quot;sensor1&quot;,
+    &quot;sensor2&quot;
+  ],
+  &quot;end_effector_map&quot;: {
+    &quot;sensor1&quot;: &quot;right&quot;,
+    &quot;sensor2&quot;: &quot;left&quot;
+  },
+  &quot;force_summary_n&quot;: {
+    &quot;sensor1&quot;: {
+      &quot;max&quot;: 23.609888901547325,
+      &quot;mean&quot;: 7.424733077001562
+    },
+    &quot;sensor2&quot;: {
+      &quot;max&quot;: 31.830356301983244,
+      &quot;mean&quot;: 16.207479625335324
+    }
+  },
+  &quot;workspace_bbox_m&quot;: {
+    &quot;min&quot;: [
+      -0.04251,
+      -0.67053,
+      0.66766
+    ],
+    &quot;max&quot;: [
+      0.43631,
+      -0.00099,
+      1.5114
+    ]
+  },
+  &quot;preprocessing_notes&quot;: [
+    &quot;Positions are converted from millimeters to meters.&quot;,
+    &quot;End-effector targets are the demonstrator&#x27;s wrist trajectories.&quot;,
+    &quot;Forces and torques are rotated into the motion-capture (room) frame.&quot;,
+    &quot;sensor1: inferred right end-effector by wrist proximity (left=0.332 m, right=0.116 m)&quot;
+  ]
+}</pre></details>
+</body></html>

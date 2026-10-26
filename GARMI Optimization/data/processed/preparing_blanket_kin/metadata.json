@@ -1,0 +1,56 @@
+{
+  "task_name": "preparing_blanket_kin",
+  "trial_id": "preparing_blanket_kin",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "person rolls blanket in bed",
+  "original_trial_name": "blanket1",
+  "split": "heldout",
+  "repeat_group": "preparing_blanket",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/preparing_blanket_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.566666666666667,
+    "end": 11.983333333333333,
+    "duration": 9.416666666666666,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 309,
+    "end_frame": 1439
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -1.31753,
+      -0.62504,
+      0.93564
+    ],
+    "max": [
+      -0.52115,
+      0.74613,
+      1.77718
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}

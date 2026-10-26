@@ -1,0 +1,68 @@
+{
+  "task_name": "opening_window_exercise_force",
+  "trial_id": "opening_window_exercise_force",
+  "category": "geriatric_rehabilitation",
+  "category_name": "Geriatric Rehabilitation",
+  "description": "exercise: passive mobilisation for ADL cleaning window three times with interaction forces",
+  "original_trial_name": "fenster_k_1",
+  "split": "optimization",
+  "repeat_group": "opening_window_exercise",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Geriatric Rehabilitation/MoCap/opening_window_exercise_force.csv",
+    "force_torque": "Geriatric Rehabilitation/FT-sensor/opening_window_exercise_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 5.312191004464286,
+    "end": 27.149330608258932,
+    "duration": 21.837139603794647,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 633,
+    "end_frame": 3231
+  },
+  "sensor_positions": {
+    "sensor1": "left upperarm",
+    "sensor2": "left wrist"
+  },
+  "available_sensors": [
+    "sensor1",
+    "sensor2"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": "left"
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 23.609888901547325,
+      "mean": 7.424733077001562
+    },
+    "sensor2": {
+      "max": 31.830356301983244,
+      "mean": 16.207479625335324
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -0.04251,
+      -0.67053,
+      0.66766
+    ],
+    "max": [
+      0.43631,
+      -0.00099,
+      1.5114
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "sensor1: inferred right end-effector by wrist proximity (left=0.332 m, right=0.116 m)"
+  ]
+}

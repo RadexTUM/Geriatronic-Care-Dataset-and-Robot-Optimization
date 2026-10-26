@@ -1,0 +1,3 @@
+configuration,n_trials,kinematic_coverage,dynamic_pass_rate,dynamic_passes,mean_tracking_error_m,kin_pass_dyn_pass,kin_pass_dyn_fail,kin_fail_dyn_pass,kin_fail_dyn_fail,mcnemar_exact_p
+baseline,55,0.6181818181818182,0.34545454545454546,19,0.04290114711111931,18,16,1,20,0.000274658203125
+recommended,55,0.7818181818181819,0.4,22,0.03830893326411524,22,21,0,12,9.5367431640625e-07

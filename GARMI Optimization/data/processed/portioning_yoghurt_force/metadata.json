@@ -1,0 +1,63 @@
+{
+  "task_name": "portioning_yoghurt_force",
+  "trial_id": "portioning_yoghurt_force",
+  "category": "meals",
+  "category_name": "Meals",
+  "description": "person portions yoghurt with a laddle to a small bowl",
+  "original_trial_name": "portion4",
+  "split": "optimization",
+  "repeat_group": "portioning_yoghurt",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Meals/MoCap/portioning_yoghurt_force.csv",
+    "force_torque": "Meals/FT-sensor/portioning_yoghurt_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 2.933435092731829,
+    "end": 26.140352832080197,
+    "duration": 23.206917739348366,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 350,
+    "end_frame": 3111
+  },
+  "sensor_positions": {
+    "sensor1": "rigth hand",
+    "sensor2": null
+  },
+  "available_sensors": [
+    "sensor1"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": null
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 5.625414980792976,
+      "mean": 2.011999820941291
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -0.87096,
+      0.21653,
+      0.90282
+    ],
+    "max": [
+      -0.0794,
+      0.75599,
+      1.18634
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "Missing sensor2 nodes: sensor2:xplus, sensor2:xminus, sensor2:yminus"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "task_name": "combing_hair_force",
+  "trial_id": "combing_hair_force",
+  "category": "basic_care",
+  "category_name": "Basic Care",
+  "description": "therapist combs patient's hair with comb",
+  "original_trial_name": "hair4",
+  "split": "optimization",
+  "repeat_group": "combing_hair",
+  "force_measurement": true,
+  "source_files": {
+    "mocap": "Basic Care/MoCap/combing_hair_force.csv",
+    "force_torque": "Basic Care/FT-sensor/combing_hair_force_ft.csv"
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": 240,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 1.972986913446677,
+    "end": 19.25770132612056,
+    "duration": 17.284714412673885,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 235,
+    "end_frame": 2285
+  },
+  "sensor_positions": {
+    "sensor1": "therapist right hand",
+    "sensor2": null
+  },
+  "available_sensors": [
+    "sensor1"
+  ],
+  "end_effector_map": {
+    "sensor1": "right",
+    "sensor2": null
+  },
+  "force_summary_n": {
+    "sensor1": {
+      "max": 5.4451859029063305,
+      "mean": 2.027204389200642
+    }
+  },
+  "workspace_bbox_m": {
+    "min": [
+      -1.91252,
+      0.21167,
+      0.79494
+    ],
+    "max": [
+      -0.53888,
+      1.03892,
+      1.53171
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "Missing sensor2 nodes: sensor2:xplus, sensor2:xminus, sensor2:yminus"
+  ]
+}

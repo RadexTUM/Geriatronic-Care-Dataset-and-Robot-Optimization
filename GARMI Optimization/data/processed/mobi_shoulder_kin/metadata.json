@@ -1,0 +1,56 @@
+{
+  "task_name": "mobi_shoulder_kin",
+  "trial_id": "mobi_shoulder_kin",
+  "category": "geriatric_rehabilitation",
+  "category_name": "Geriatric Rehabilitation",
+  "description": "therapist mobilizes patient\u00b4s left shoulder",
+  "original_trial_name": "shoulder2",
+  "split": "optimization",
+  "repeat_group": "mobi_shoulder_kin",
+  "force_measurement": false,
+  "source_files": {
+    "mocap": "Geriatric Rehabilitation/MoCap/mobi_shoulder_kin.csv",
+    "force_torque": null
+  },
+  "node_rate_hz": 120,
+  "ft_rate_hz": null,
+  "n_task_points": 50,
+  "time_window_s": {
+    "start": 1.625,
+    "end": 21.183333333333334,
+    "duration": 19.558333333333334,
+    "source": "metadata_frames"
+  },
+  "metadata_frames": {
+    "start_frame": 196,
+    "end_frame": 2543
+  },
+  "sensor_positions": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "available_sensors": [],
+  "end_effector_map": {
+    "sensor1": null,
+    "sensor2": null
+  },
+  "force_summary_n": {},
+  "workspace_bbox_m": {
+    "min": [
+      -0.90439,
+      0.61665,
+      0.86282
+    ],
+    "max": [
+      -0.56785,
+      1.08538,
+      1.26222
+    ]
+  },
+  "preprocessing_notes": [
+    "Positions are converted from millimeters to meters.",
+    "End-effector targets are the demonstrator's wrist trajectories.",
+    "Forces and torques are rotated into the motion-capture (room) frame.",
+    "kinematics-only trial: no force-torque recording; forces set to zero"
+  ]
+}
